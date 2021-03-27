@@ -1,0 +1,945 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Задание_НомерТТН</dataPath>
+			<field>Задание_НомерТТН</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер ТТН</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Поступление_Количество</dataPath>
+			<field>Поступление_Количество</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Заказ_Ссылка</dataPath>
+			<field>Заказ_Ссылка</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер спецификации</v8:content>
+				</v8:item>
+			</title>
+			<presentationExpression>Заказ_Ссылка.Номер</presentationExpression>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Заказ_Дата</dataPath>
+			<field>Заказ_Дата</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата заключения</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ=dd.MM.yyyy</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Заказ_Поставщик</dataPath>
+			<field>Заказ_Поставщик</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поставщик</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Заказ_Договор</dataPath>
+			<field>Заказ_Договор</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Договор</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Задание_Дата</dataPath>
+			<field>Задание_Дата</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата внесения</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ=dd.MM.yyyy</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Поступление_Поставщик</dataPath>
+			<field>Поступление_Поставщик</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поставщик</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Заказ_Культура</dataPath>
+			<field>Заказ_Культура</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Культура</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Поступление_Подтверждение</dataPath>
+			<field>Поступление_Подтверждение</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поступление подтверждение</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Задание_Ссылка</dataPath>
+			<field>Задание_Ссылка</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер</v8:content>
+				</v8:item>
+			</title>
+			<presentationExpression>Задание_Ссылка.Номер</presentationExpression>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Поступление_Цена</dataPath>
+			<field>Поступление_Цена</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цена</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Задание_ДатаТТН</dataPath>
+			<field>Задание_ДатаТТН</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата ТТН (отгрузки)</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ=dd.MM.yyyy</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Поступление_Дата</dataPath>
+			<field>Поступление_Дата</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата поступления на склад</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ=dd.MM.yyyy</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Задание_ОбъемОтгрузки</dataPath>
+			<field>Задание_ОбъемОтгрузки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объем отгрузки</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Задание_Перевозчик</dataPath>
+			<field>Задание_Перевозчик</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перевозчик</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Задание_Транспорт</dataPath>
+			<field>Задание_Транспорт</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Транспорт</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Задание_ЦенаПеревозкиНаТоннуСНДС</dataPath>
+			<field>Задание_ЦенаПеревозкиНаТоннуСНДС</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цена перевозки на тонну (с НДС)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Задание_СтавкаНДС</dataPath>
+			<field>Задание_СтавкаНДС</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ставка НДС</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Поступление_Аналитика</dataPath>
+			<field>Поступление_Аналитика</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Аналитика</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Задание_Подтверждение</dataPath>
+			<field>Задание_Подтверждение</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задание подтверждение</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Задание_Заказ_Ссылка</dataPath>
+			<field>Задание_Заказ_Ссылка</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задание заказ ссылка</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Поступление_Ссылка</dataPath>
+			<field>Поступление_Ссылка</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер</v8:content>
+				</v8:item>
+			</title>
+			<presentationExpression>Поступление_Ссылка.Номер</presentationExpression>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Поступление_Договор</dataPath>
+			<field>Поступление_Договор</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Договор</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Поступление_Склад</dataPath>
+			<field>Поступление_Склад</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Склад</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Поступление_Валюта</dataPath>
+			<field>Поступление_Валюта</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Валюта</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Поступление_Номенклатура</dataPath>
+			<field>Поступление_Номенклатура</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Поступление_Менеджер</dataPath>
+			<field>Поступление_Менеджер</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Менеджер</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Поступление_Упаковка</dataPath>
+			<field>Поступление_Упаковка</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Упаковка</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Поступление_Сумма</dataPath>
+			<field>Поступление_Сумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Поступление_СтавкаНДС</dataPath>
+			<field>Поступление_СтавкаНДС</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ставка НДС</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Поступление_СуммаНДС</dataPath>
+			<field>Поступление_СуммаНДС</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма НДС</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Поступление_СуммаСНДС</dataPath>
+			<field>Поступление_СуммаСНДС</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма с НДС</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Поступление_ДоставкаПоставщика</dataPath>
+			<field>Поступление_ДоставкаПоставщика</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доставка поставщика</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Поступление_Налогообложение</dataPath>
+			<field>Поступление_Налогообложение</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Налогообложение</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Поступление_Заказ_Ссылка</dataPath>
+			<field>Поступление_Заказ_Ссылка</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поступление заказ ссылка</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Задание_ЦенаПеревозкиНаТонну_без_НДС</dataPath>
+			<field>Задание_ЦенаПеревозкиНаТонну_без_НДС</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цена перевозки на тонну (без НДС)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Заказ_Менеджер</dataPath>
+			<field>Заказ_Менеджер</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Менеджер</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Заказ_ОбщийОбъем</dataPath>
+			<field>Заказ_ОбщийОбъем</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заказ общий объем</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧЦ=14; ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПотериНаПеревозке</dataPath>
+			<field>ПотериНаПеревозке</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Потери на перевозке</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧЦ=14; ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ЗаказПоставщикуТовары.Ссылка КАК Заказ_Ссылка,
+	ЗаказПоставщикуТовары.Ссылка.Дата КАК Заказ_Дата,
+	ЗаказПоставщикуТовары.Ссылка.Партнер КАК Заказ_Поставщик,
+	ЗаказПоставщикуТовары.Ссылка.Договор КАК Заказ_Договор,
+	ЗаказПоставщикуТовары.Номенклатура КАК Заказ_Культура,
+	ЗаказПоставщикуТовары.Ссылка.Менеджер КАК Менеджер,
+	ЗаказПоставщикуТовары.Количество КАК Заказ_ОбщийОбъем
+ПОМЕСТИТЬ вт_Заказ
+ИЗ
+	Документ.ЗаказПоставщику.Товары КАК ЗаказПоставщикуТовары
+ГДЕ
+	ЗаказПоставщикуТовары.Ссылка.Проведен
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЗаданиеНаПеревозкуРаспоряжения.Ссылка КАК Задание_Ссылка,
+	ЗаданиеНаПеревозкуРаспоряжения.Ссылка.Дата КАК Задание_Дата,
+	ЗаданиеНаПеревозкуРаспоряжения.Ссылка.НомерТТН_ЖДН КАК Задание_НомерТТН,
+	ЗаданиеНаПеревозкуРаспоряжения.Ссылка.ДатаТТН_ЖДН КАК Задание_ДатаТТН,
+	ЗаданиеНаПеревозкуРаспоряжения.Ссылка.ПеревозчикДоп КАК Задание_Перевозчик,
+	ЗаданиеНаПеревозкуРаспоряжения.Ссылка.ТранспортноеСредство КАК Задание_Транспорт,
+	ЗаданиеНаПеревозкуРаспоряжения.Ссылка.Вес КАК Задание_ОбъемОтгрузки,
+	ЗаданиеНаПеревозкуРаспоряжения.Ссылка.ЦенаПеревозкиНаТонну_с_НДС КАК Задание_ЦенаПеревозкиНаТоннуСНДС,
+	ЗаданиеНаПеревозкуРаспоряжения.Ссылка.ЦенаПеревозкиНаТонну_без_НДС КАК Задание_ЦенаПеревозкиНаТонну_без_НДС,
+	ЗаданиеНаПеревозкуРаспоряжения.Ссылка.СтавкаНДС КАК Задание_СтавкаНДС,
+	ЗаданиеНаПеревозкуРаспоряжения.Ссылка.СтатусПодтверждения КАК Задание_Подтверждение,
+	ЗаданиеНаПеревозкуРаспоряжения.Распоряжение КАК Задание_Заказ_Ссылка
+ПОМЕСТИТЬ вт_Задание
+ИЗ
+	Документ.ЗаданиеНаПеревозку.Распоряжения КАК ЗаданиеНаПеревозкуРаспоряжения
+ГДЕ
+	ЗаданиеНаПеревозкуРаспоряжения.Ссылка.Проведен
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ПоступлениеТоваровНаСкладТовары.Ссылка КАК Поступление_Ссылка,
+	ПоступлениеТоваровНаСкладТовары.Ссылка.СтатусПодтверждения КАК Поступление_Подтверждение,
+	ПоступлениеТоваровНаСкладТовары.Ссылка.Дата КАК Поступление_Дата,
+	ПоступлениеТоваровНаСкладТовары.Ссылка.Партнер КАК Поступление_Поставщик,
+	ПоступлениеТоваровНаСкладТовары.Ссылка.Договор КАК Поступление_Договор,
+	ПоступлениеТоваровНаСкладТовары.Ссылка.Склад КАК Поступление_Склад,
+	ПоступлениеТоваровНаСкладТовары.Ссылка.Валюта КАК Поступление_Валюта,
+	ПоступлениеТоваровНаСкладТовары.Номенклатура КАК Поступление_Номенклатура,
+	ПоступлениеТоваровНаСкладТовары.Количество КАК Поступление_Количество,
+	ПоступлениеТоваровНаСкладТовары.Упаковка КАК Поступление_Упаковка,
+	ПоступлениеТоваровНаСкладТовары.Цена КАК Поступление_Цена,
+	ПоступлениеТоваровНаСкладТовары.Сумма КАК Поступление_Сумма,
+	ПоступлениеТоваровНаСкладТовары.СтавкаНДС КАК Поступление_СтавкаНДС,
+	ПоступлениеТоваровНаСкладТовары.СуммаНДС КАК Поступление_СуммаНДС,
+	ПоступлениеТоваровНаСкладТовары.СуммаСНДС КАК Поступление_СуммаСНДС,
+	ПоступлениеТоваровНаСкладТовары.ДоставкаПоставщика КАК Поступление_ДоставкаПоставщика,
+	ПоступлениеТоваровНаСкладТовары.Аналитика КАК Поступление_Аналитика,
+	ПоступлениеТоваровНаСкладТовары.Ссылка.Менеджер КАК Поступление_Менеджер,
+	ПоступлениеТоваровНаСкладТовары.Ссылка.НалогообложениеНДС КАК Поступление_Налогообложение,
+	ПоступлениеТоваровНаСкладТовары.Ссылка.Распоряжение КАК Поступление_Заказ_Ссылка
+ПОМЕСТИТЬ вт_Поступление
+ИЗ
+	Документ.ПоступлениеТоваровНаСклад.Товары КАК ПоступлениеТоваровНаСкладТовары
+ГДЕ
+	ПоступлениеТоваровНаСкладТовары.Ссылка.Проведен
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	вт_Заказ.Заказ_Ссылка КАК Заказ_Ссылка,
+	вт_Заказ.Заказ_Дата КАК Заказ_Дата,
+	вт_Заказ.Заказ_Поставщик КАК Заказ_Поставщик,
+	вт_Заказ.Заказ_Договор КАК Заказ_Договор,
+	вт_Заказ.Заказ_Культура КАК Заказ_Культура,
+	вт_Заказ.Менеджер КАК Заказ_Менеджер,
+	вт_Заказ.Заказ_ОбщийОбъем КАК Заказ_ОбщийОбъем,
+	вт_Задание.Задание_Ссылка КАК Задание_Ссылка,
+	вт_Задание.Задание_Дата КАК Задание_Дата,
+	вт_Задание.Задание_НомерТТН КАК Задание_НомерТТН,
+	вт_Задание.Задание_ДатаТТН КАК Задание_ДатаТТН,
+	вт_Задание.Задание_Перевозчик КАК Задание_Перевозчик,
+	вт_Задание.Задание_Транспорт КАК Задание_Транспорт,
+	вт_Задание.Задание_ОбъемОтгрузки КАК Задание_ОбъемОтгрузки,
+	вт_Задание.Задание_ЦенаПеревозкиНаТоннуСНДС КАК Задание_ЦенаПеревозкиНаТоннуСНДС,
+	вт_Задание.Задание_ЦенаПеревозкиНаТонну_без_НДС КАК Задание_ЦенаПеревозкиНаТонну_без_НДС,
+	вт_Задание.Задание_СтавкаНДС КАК Задание_СтавкаНДС,
+	вт_Задание.Задание_Подтверждение КАК Задание_Подтверждение,
+	вт_Задание.Задание_Заказ_Ссылка КАК Задание_Заказ_Ссылка
+ПОМЕСТИТЬ вт1_
+ИЗ
+	вт_Заказ КАК вт_Заказ
+		ЛЕВОЕ СОЕДИНЕНИЕ вт_Задание КАК вт_Задание
+		ПО вт_Заказ.Заказ_Ссылка = вт_Задание.Задание_Заказ_Ссылка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	вт1_.Заказ_Ссылка КАК Заказ_Ссылка,
+	вт1_.Заказ_Дата КАК Заказ_Дата,
+	вт1_.Заказ_Поставщик КАК Заказ_Поставщик,
+	вт1_.Заказ_Договор КАК Заказ_Договор,
+	вт1_.Заказ_Культура КАК Заказ_Культура,
+	вт1_.Заказ_Менеджер КАК Заказ_Менеджер,
+	вт1_.Заказ_ОбщийОбъем КАК Заказ_ОбщийОбъем,
+	вт1_.Задание_Ссылка КАК Задание_Ссылка,
+	вт1_.Задание_Дата КАК Задание_Дата,
+	вт1_.Задание_НомерТТН КАК Задание_НомерТТН,
+	вт1_.Задание_ДатаТТН КАК Задание_ДатаТТН,
+	вт1_.Задание_Перевозчик КАК Задание_Перевозчик,
+	вт1_.Задание_Транспорт КАК Задание_Транспорт,
+	вт1_.Задание_ОбъемОтгрузки КАК Задание_ОбъемОтгрузки,
+	вт1_.Задание_ЦенаПеревозкиНаТоннуСНДС КАК Задание_ЦенаПеревозкиНаТоннуСНДС,
+	вт1_.Задание_ЦенаПеревозкиНаТонну_без_НДС КАК Задание_ЦенаПеревозкиНаТонну_без_НДС,
+	вт1_.Задание_СтавкаНДС КАК Задание_СтавкаНДС,
+	вт1_.Задание_Подтверждение КАК Задание_Подтверждение,
+	вт1_.Задание_Заказ_Ссылка КАК Задание_Заказ_Ссылка,
+	вт_Поступление.Поступление_Ссылка КАК Поступление_Ссылка,
+	вт_Поступление.Поступление_Подтверждение КАК Поступление_Подтверждение,
+	вт_Поступление.Поступление_Дата КАК Поступление_Дата,
+	вт_Поступление.Поступление_Поставщик КАК Поступление_Поставщик,
+	вт_Поступление.Поступление_Договор КАК Поступление_Договор,
+	вт_Поступление.Поступление_Склад КАК Поступление_Склад,
+	вт_Поступление.Поступление_Валюта КАК Поступление_Валюта,
+	вт_Поступление.Поступление_Номенклатура КАК Поступление_Номенклатура,
+	вт_Поступление.Поступление_Количество КАК Поступление_Количество,
+	вт_Поступление.Поступление_Упаковка КАК Поступление_Упаковка,
+	вт_Поступление.Поступление_Цена КАК Поступление_Цена,
+	вт_Поступление.Поступление_Сумма КАК Поступление_Сумма,
+	вт_Поступление.Поступление_СтавкаНДС КАК Поступление_СтавкаНДС,
+	вт_Поступление.Поступление_СуммаНДС КАК Поступление_СуммаНДС,
+	вт_Поступление.Поступление_СуммаСНДС КАК Поступление_СуммаСНДС,
+	вт_Поступление.Поступление_ДоставкаПоставщика КАК Поступление_ДоставкаПоставщика,
+	вт_Поступление.Поступление_Аналитика КАК Поступление_Аналитика,
+	вт_Поступление.Поступление_Менеджер КАК Поступление_Менеджер,
+	вт_Поступление.Поступление_Налогообложение КАК Поступление_Налогообложение,
+	вт_Поступление.Поступление_Заказ_Ссылка КАК Поступление_Заказ_Ссылка
+ПОМЕСТИТЬ вт2_
+ИЗ
+	вт1_ КАК вт1_
+		ЛЕВОЕ СОЕДИНЕНИЕ вт_Поступление КАК вт_Поступление
+		ПО вт1_.Заказ_Ссылка = вт_Поступление.Поступление_Заказ_Ссылка
+			И вт1_.Задание_Ссылка = вт_Поступление.Поступление_Аналитика
+			И вт1_.Заказ_Культура = вт_Поступление.Поступление_Номенклатура
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	вт2_.Заказ_Ссылка КАК Заказ_Ссылка,
+	вт2_.Заказ_Дата КАК Заказ_Дата,
+	вт2_.Заказ_Поставщик КАК Заказ_Поставщик,
+	вт2_.Заказ_Договор КАК Заказ_Договор,
+	вт2_.Заказ_Культура КАК Заказ_Культура,
+	вт2_.Заказ_Менеджер КАК Заказ_Менеджер,
+	вт2_.Заказ_ОбщийОбъем КАК Заказ_ОбщийОбъем,
+	вт2_.Задание_Ссылка КАК Задание_Ссылка,
+	вт2_.Задание_Дата КАК Задание_Дата,
+	вт2_.Задание_НомерТТН КАК Задание_НомерТТН,
+	вт2_.Задание_ДатаТТН КАК Задание_ДатаТТН,
+	вт2_.Задание_Перевозчик КАК Задание_Перевозчик,
+	вт2_.Задание_Транспорт КАК Задание_Транспорт,
+	вт2_.Задание_ОбъемОтгрузки КАК Задание_ОбъемОтгрузки,
+	вт2_.Задание_ЦенаПеревозкиНаТоннуСНДС КАК Задание_ЦенаПеревозкиНаТоннуСНДС,
+	вт2_.Задание_ЦенаПеревозкиНаТонну_без_НДС КАК Задание_ЦенаПеревозкиНаТонну_без_НДС,
+	вт2_.Задание_СтавкаНДС КАК Задание_СтавкаНДС,
+	вт2_.Задание_Подтверждение КАК Задание_Подтверждение,
+	вт2_.Задание_Заказ_Ссылка КАК Задание_Заказ_Ссылка,
+	вт2_.Поступление_Ссылка КАК Поступление_Ссылка,
+	вт2_.Поступление_Подтверждение КАК Поступление_Подтверждение,
+	вт2_.Поступление_Дата КАК Поступление_Дата,
+	вт2_.Поступление_Поставщик КАК Поступление_Поставщик,
+	вт2_.Поступление_Договор КАК Поступление_Договор,
+	вт2_.Поступление_Склад КАК Поступление_Склад,
+	вт2_.Поступление_Валюта КАК Поступление_Валюта,
+	вт2_.Поступление_Номенклатура КАК Поступление_Номенклатура,
+	вт2_.Поступление_Количество КАК Поступление_Количество,
+	вт2_.Поступление_Упаковка КАК Поступление_Упаковка,
+	вт2_.Поступление_Цена КАК Поступление_Цена,
+	вт2_.Поступление_Сумма КАК Поступление_Сумма,
+	вт2_.Поступление_СтавкаНДС КАК Поступление_СтавкаНДС,
+	вт2_.Поступление_СуммаНДС КАК Поступление_СуммаНДС,
+	вт2_.Поступление_СуммаСНДС КАК Поступление_СуммаСНДС,
+	вт2_.Поступление_ДоставкаПоставщика КАК Поступление_ДоставкаПоставщика,
+	вт2_.Поступление_Аналитика КАК Поступление_Аналитика,
+	вт2_.Поступление_Менеджер КАК Поступление_Менеджер,
+	вт2_.Поступление_Налогообложение КАК Поступление_Налогообложение,
+	вт2_.Поступление_Заказ_Ссылка КАК Поступление_Заказ_Ссылка,
+	вт2_.Поступление_Количество - вт2_.Задание_ОбъемОтгрузки КАК ПотериНаПеревозке
+ИЗ
+	вт2_ КАК вт2_</query>
+	</dataSet>
+	<settingsVariant>
+		<dcsset:name>ОтчетДляБухгалтераПоПервичнойДокументации</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Отчет для бухгалтера по первичной документации</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Спецификация</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Заказ_Ссылка</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Заказ_Дата</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Заказ_Поставщик</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Заказ_Договор</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Заказ_Культура</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Заказ_ОбщийОбъем</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Задание на перевозку</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Задание_Ссылка</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Задание_Дата</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Задание_НомерТТН</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Задание_ДатаТТН</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Задание_Перевозчик</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Задание_Транспорт</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Задание_ОбъемОтгрузки</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Задание_ЦенаПеревозкиНаТоннуСНДС</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Задание_ЦенаПеревозкиНаТонну_без_НДС</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Задание_СтавкаНДС</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус подтверждения</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Задание_Подтверждение</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Поступление_Подтверждение</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПотериНаПеревозке</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поступление товаров на склад</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Поступление_Ссылка</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Поступление_Дата</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Поступление_Поставщик</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Поступление_Договор</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Поступление_Склад</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Поступление_Валюта</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Поступление_Номенклатура</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Поступление_Количество</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Поступление_Упаковка</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Поступление_Цена</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Поступление_Сумма</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Поступление_СтавкаНДС</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Поступление_СуммаНДС</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Поступление_СуммаСНДС</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Поступление_ДоставкаПоставщика</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Поступление_Аналитика</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Поступление_Менеджер</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Поступление_Налогообложение</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Заказ_Дата</dcsset:left>
+					<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
+					<dcsset:right xsi:type="v8:StandardBeginningDate">
+						<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
+					</dcsset:right>
+					<dcsset:userSettingID>5a4514c1-540b-438c-b712-624e8dd42469</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>с</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Заказ_Дата</dcsset:left>
+					<dcsset:comparisonType>LessOrEqual</dcsset:comparisonType>
+					<dcsset:right xsi:type="v8:StandardBeginningDate">
+						<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfNextDay</v8:variant>
+					</dcsset:right>
+					<dcsset:userSettingID>8ae433d9-4413-404c-9ea9-91cdad932b80</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>по</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Заказ_Ссылка</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>79b947c8-7ba7-44e5-845a-c61aa235eb0e</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Спецификация</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Заказ_Культура</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>636f025a-d1b3-48ca-b5d0-8b24383de2c0</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Культура</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Заказ_Поставщик</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>9ec95f7e-38b4-4eba-90ec-f1ffce752438</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поставщик</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Задание_Перевозчик</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>868f0ab7-bbde-42f0-ac94-a095efd49dfc</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Перевозчик</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Поступление_Склад</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>d677f93c-32d6-4b78-9e74-7df9f869dd03</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Склад</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Поступление_Менеджер</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>693f9fe9-c1ad-46f4-ab4c-a941c08bc693</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Менеджер</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Море</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

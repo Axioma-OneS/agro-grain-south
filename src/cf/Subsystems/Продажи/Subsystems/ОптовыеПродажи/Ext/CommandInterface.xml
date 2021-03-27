@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<CommandsVisibility>
+		<Command name="Document.РеализацияУслугПрочихАктивов.Command.РеализацииУслугПрочихАктивов">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.КорректировкаРеализации.Command.КорректировкиРеализаций">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.СчетНаОплатуКлиенту.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеСчетовНаОплатуКлиентам">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Document.ЗапросКоммерческогоПредложенияОтКлиента.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.КоммерческоеПредложениеКлиенту.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ЗаказКлиента.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.РеализацияТоваровУслуг.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.РеализацияУслугПрочихАктивов.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:c7c0ead6-40db-47cd-85f3-e065d7c82f48">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ЗаявкаНаВозвратТоваровОтКлиента.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ВозвратТоваровОтКлиента.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:cfd9c0ae-f750-4d3f-9f32-588b079aa237">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.АктОРасхожденияхПослеОтгрузки.Command.АктыОРасхожденияхПослеРеализацийКлиентам">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.АктОРасхожденияхПослеОтгрузки.Command.АктыОРасхожденияхПослеПередачиТоваровХранителю">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.АктОРасхожденияхПослеПриемки.Command.АктыОРасхожденияхПослеВозвратовОтКлиентов">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.АктОРасхожденияхПослеПриемки.Command.АктыОРасхожденияхПослеПоступленияТоваровОтХранителя">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:76a33c9b-db58-4abc-a80e-87fd274c4600">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:7155d921-3d57-400d-b22c-6e0bae52fe6f">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ДоверенностьВыданная.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ДоверенностьВыданная.Command.ДоверенностиНаПолучениеТоваров">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.АктОРасхожденияхПослеПриемки.Command.АктыОРасхожденияхПослеПриобретения">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.АктОРасхожденияхПослеОтгрузки.Command.АктыОРасхожденияхПослеВозвратовПоставщикам">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.АктОРасхожденияхПослеПриемки.Command.АктыОРасхожденияхПослеПриемкиТоваровНаХранение">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.АктОРасхожденияхПослеОтгрузки.Command.АктыОРасхожденияхПослеОтгрузкиТоваровСХранения">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.АктВыполненныхРабот.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ДоверенностьВыданная.Command.ДоверенностиНаПолучениеДС">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ЗапросыКоммерческихПредложений.Command.НайтиЗапросыКоммерческихПредложений">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ЗаказКлиента.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ПартнерыКоторымОтгрузкаЗапрещена.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ВаловаяПрибыльПоОплаченнымОтгрузкам.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ВыручкаИСебестоимостьПродаж.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.СравнительныйАнализПоказателейРаботыМенеджеров.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.СостояниеОбеспечения.Command.СостояниеОбеспеченияЗаказов">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.УправлениеПереданнойВозвратнойТарой.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ЗапросыКоммерческихПредложений.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="Document.ЗаказКлиента.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.РазделГлавное03_Продажи</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.РеализацияТоваровУслуг.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.РазделГлавное03_Продажи</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.РеализацияУслугПрочихАктивов.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.РазделГлавное03_Продажи</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="0:c7c0ead6-40db-47cd-85f3-e065d7c82f48">
+			<CommandGroup>CommandGroup.РазделГлавное03_Продажи</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.ЗаявкаНаВозвратТоваровОтКлиента.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.РазделГлавное03_Продажи</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.ВозвратТоваровОтКлиента.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.РазделГлавное03_Продажи</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="0:cfd9c0ae-f750-4d3f-9f32-588b079aa237">
+			<CommandGroup>CommandGroup.РазделГлавное03_Продажи</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.АктОРасхожденияхПослеОтгрузки.Command.АктыОРасхожденияхПослеРеализацийКлиентам">
+			<CommandGroup>CommandGroup.РазделГлавное03_Продажи</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.АктОРасхожденияхПослеОтгрузки.Command.АктыОРасхожденияхПослеПередачиТоваровХранителю">
+			<CommandGroup>CommandGroup.РазделГлавное03_Продажи</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.АктОРасхожденияхПослеПриемки.Command.АктыОРасхожденияхПослеВозвратовОтКлиентов">
+			<CommandGroup>CommandGroup.РазделГлавное03_Продажи</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.АктОРасхожденияхПослеПриемки.Command.АктыОРасхожденияхПослеПоступленияТоваровОтХранителя">
+			<CommandGroup>CommandGroup.РазделГлавное03_Продажи</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="0:76a33c9b-db58-4abc-a80e-87fd274c4600">
+			<CommandGroup>CommandGroup.РазделГлавное03_Продажи</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="0:7155d921-3d57-400d-b22c-6e0bae52fe6f">
+			<CommandGroup>CommandGroup.РазделГлавное03_Продажи</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.ДоверенностьВыданная.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.РазделГлавное04_Закупки</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.ДоверенностьВыданная.Command.ДоверенностиНаПолучениеТоваров">
+			<CommandGroup>CommandGroup.РазделГлавное04_Закупки</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.АктОРасхожденияхПослеПриемки.Command.АктыОРасхожденияхПослеПриобретения">
+			<CommandGroup>CommandGroup.РазделГлавное04_Закупки</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.АктОРасхожденияхПослеОтгрузки.Command.АктыОРасхожденияхПослеВозвратовПоставщикам">
+			<CommandGroup>CommandGroup.РазделГлавное04_Закупки</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.АктОРасхожденияхПослеПриемки.Command.АктыОРасхожденияхПослеПриемкиТоваровНаХранение">
+			<CommandGroup>CommandGroup.РазделГлавное04_Закупки</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.АктОРасхожденияхПослеОтгрузки.Command.АктыОРасхожденияхПослеОтгрузкиТоваровСХранения">
+			<CommandGroup>CommandGroup.РазделГлавное04_Закупки</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.АктВыполненныхРабот.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.ДоверенностьВыданная.Command.ДоверенностиНаПолучениеДС">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ЗапросыКоммерческихПредложений.Command.НайтиЗапросыКоммерческихПредложений">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.СостояниеОбеспечения.Command.СостояниеОбеспеченияЗаказов">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="Document.ЗаказКлиента.Command.ЗаказыКлиентов">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ЖурналДокументовПродажи.Command.ДокументыПродажи">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+		<Command name="Document.ЗапросКоммерческогоПредложенияОтКлиента.Command.ЗапросыКоммерческихПредложенийОтКлиентов">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.КоммерческоеПредложениеКлиенту.Command.КоммерческиеПредложенияКлиентам">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.РеализацияУслугПрочихАктивов.Command.РеализацииУслугПрочихАктивов">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ЖурналДокументовПродажи.Command.НакладныеКОформлению">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.КорректировкаРеализации.Command.КорректировкиРеализаций">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.ЗаявкаНаВозвратТоваровОтКлиента.Command.ЗаявкиНаВозвратТоваровОтКлиентов">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ЖурналДокументовПродажи.Command.ВозвратыКОформлению">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.УправлениеПереданнойВозвратнойТарой.Command.УправлениеПереданнойВозвратнойТарой">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.СчетНаОплатуКлиенту.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.СчетФактураВыданный.Command.СчетаФактурыВыданные">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.ЗапросКоммерческогоПредложенияОтКлиента.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.КоммерческоеПредложениеКлиенту.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.ЗаказКлиента.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.РазделГлавное03_Продажи</CommandGroup>
+		</Command>
+		<Command name="Document.РеализацияТоваровУслуг.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.РазделГлавное03_Продажи</CommandGroup>
+		</Command>
+		<Command name="Document.РеализацияУслугПрочихАктивов.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.РазделГлавное03_Продажи</CommandGroup>
+		</Command>
+		<Command name="0:c7c0ead6-40db-47cd-85f3-e065d7c82f48">
+			<CommandGroup>CommandGroup.РазделГлавное03_Продажи</CommandGroup>
+		</Command>
+		<Command name="Document.ЗаявкаНаВозвратТоваровОтКлиента.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.РазделГлавное03_Продажи</CommandGroup>
+		</Command>
+		<Command name="Document.ВозвратТоваровОтКлиента.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.РазделГлавное03_Продажи</CommandGroup>
+		</Command>
+		<Command name="0:cfd9c0ae-f750-4d3f-9f32-588b079aa237">
+			<CommandGroup>CommandGroup.РазделГлавное03_Продажи</CommandGroup>
+		</Command>
+		<Command name="Document.АктОРасхожденияхПослеОтгрузки.Command.АктыОРасхожденияхПослеРеализацийКлиентам">
+			<CommandGroup>CommandGroup.РазделГлавное03_Продажи</CommandGroup>
+		</Command>
+		<Command name="Document.АктОРасхожденияхПослеОтгрузки.Command.АктыОРасхожденияхПослеПередачиТоваровХранителю">
+			<CommandGroup>CommandGroup.РазделГлавное03_Продажи</CommandGroup>
+		</Command>
+		<Command name="Document.АктОРасхожденияхПослеПриемки.Command.АктыОРасхожденияхПослеВозвратовОтКлиентов">
+			<CommandGroup>CommandGroup.РазделГлавное03_Продажи</CommandGroup>
+		</Command>
+		<Command name="Document.АктОРасхожденияхПослеПриемки.Command.АктыОРасхожденияхПослеПоступленияТоваровОтХранителя">
+			<CommandGroup>CommandGroup.РазделГлавное03_Продажи</CommandGroup>
+		</Command>
+		<Command name="0:76a33c9b-db58-4abc-a80e-87fd274c4600">
+			<CommandGroup>CommandGroup.РазделГлавное03_Продажи</CommandGroup>
+		</Command>
+		<Command name="0:7155d921-3d57-400d-b22c-6e0bae52fe6f">
+			<CommandGroup>CommandGroup.РазделГлавное03_Продажи</CommandGroup>
+		</Command>
+		<Command name="Document.ДоверенностьВыданная.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.РазделГлавное04_Закупки</CommandGroup>
+		</Command>
+		<Command name="Document.ДоверенностьВыданная.Command.ДоверенностиНаПолучениеТоваров">
+			<CommandGroup>CommandGroup.РазделГлавное04_Закупки</CommandGroup>
+		</Command>
+		<Command name="Document.АктОРасхожденияхПослеПриемки.Command.АктыОРасхожденияхПослеПриобретения">
+			<CommandGroup>CommandGroup.РазделГлавное04_Закупки</CommandGroup>
+		</Command>
+		<Command name="Document.АктОРасхожденияхПослеОтгрузки.Command.АктыОРасхожденияхПослеВозвратовПоставщикам">
+			<CommandGroup>CommandGroup.РазделГлавное04_Закупки</CommandGroup>
+		</Command>
+		<Command name="Document.АктОРасхожденияхПослеПриемки.Command.АктыОРасхожденияхПослеПриемкиТоваровНаХранение">
+			<CommandGroup>CommandGroup.РазделГлавное04_Закупки</CommandGroup>
+		</Command>
+		<Command name="Document.АктОРасхожденияхПослеОтгрузки.Command.АктыОРасхожденияхПослеОтгрузкиТоваровСХранения">
+			<CommandGroup>CommandGroup.РазделГлавное04_Закупки</CommandGroup>
+		</Command>
+		<Command name="Document.АктВыполненныхРабот.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="Document.ДоверенностьВыданная.Command.ДоверенностиНаПолучениеДС">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ЗапросыКоммерческихПредложений.Command.НайтиЗапросыКоммерческихПредложений">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="Document.ЗаказКлиента.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.АктВыполненныхРабот.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.ВозвратТоваровОтКлиента.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="1:76a33c9b-db58-4abc-a80e-87fd274c4600">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.ДоверенностьВыданная.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.ЗаявкаНаВозвратТоваровОтКлиента.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.КоммерческоеПредложениеКлиенту.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="1:c7c0ead6-40db-47cd-85f3-e065d7c82f48">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="1:cfd9c0ae-f750-4d3f-9f32-588b079aa237">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.РеализацияТоваровУслуг.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.РеализацияУслугПрочихАктивов.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="1:7155d921-3d57-400d-b22c-6e0bae52fe6f">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.СчетНаОплатуКлиенту.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.КоммерческоеПредложениеКлиенту.Command.КоммерческоеПредложениеКлиенту">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.ЗапросКоммерческогоПредложенияОтКлиента.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.СостояниеОбеспечения.Command.СостояниеОбеспеченияЗаказов">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ПанельОбменВЕТИС.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ПанельОбменЕГАИС.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ПанельОбменГИСМ.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.УправлениеПереданнойВозвратнойТарой.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ЗапросыКоммерческихПредложений.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelImportant</Group>
+		<Group>NavigationPanelOrdinary</Group>
+		<Group>CommandGroup.РазделГлавное03_Продажи</Group>
+		<Group>CommandGroup.РазделГлавное04_Закупки</Group>
+		<Group>NavigationPanelSeeAlso</Group>
+		<Group>ActionsPanelCreate</Group>
+		<Group>ActionsPanelTools</Group>
+	</GroupsOrder>
+</CommandInterface>

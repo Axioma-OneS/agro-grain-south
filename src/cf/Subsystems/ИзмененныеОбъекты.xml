@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Subsystem uuid="b185979c-6f1d-49f9-98c7-1c3c7d2caf40">
+		<Properties>
+			<Name>ИзмененныеОбъекты</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Измененные объекты</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Карло... 19.09.2020</Comment>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РабочееМестоМенеджераПоДоставке</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыЗаданийНаПеревозку</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗаданиеНаПеревозку</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗаказПоставщику</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеТоваровНаСклад</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДоговорыКонтрагентов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.РолиИсполнителей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Task.ЗадачаИсполнителя</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыДоговоровКонтрагентов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СостоянияДоговоровКонтрагентов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.БизнесПроцесс</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.ВладелецЗначенийКлючейДоступа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.ВладелецЗначенийКлючейДоступаОбъект</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.ВладелецНаборовЗначенийДоступаОбъект</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.СогласованиеДоговоров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЗаданиеНаПеревозкуЛокализация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ПоступлениеТоваровНаСкладЛокализация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.БухгалтерПоПервичнойДокументации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыПодтверждения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПросмотрОтчетаДляБухгалтераПоПервичнойДокументации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ФормыОткрываемыеПриНачалеРаботыСистемы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОткрытиеФормПриНачалеРаботыСистемыКлиентСерверПереопределяемый</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<DataProcessor uuid="b6fd2aed-d751-414a-b5a7-9ea4e57f3c97">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.СервисДоставки" category="Object">
+				<xr:TypeId>c7757210-e25e-40e7-917f-4259f6ab81dc</xr:TypeId>
+				<xr:ValueId>2e8e5c80-bddf-4afe-bb11-b8240eb5e8fc</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.СервисДоставки" category="Manager">
+				<xr:TypeId>bf961084-67d4-4fab-a9d7-eece2ec70810</xr:TypeId>
+				<xr:ValueId>a0730385-0bb4-435d-b86e-50cf846eb551</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>СервисДоставки</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сервис доставки</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>DataProcessor.СервисДоставки.Form.Форма</DefaultForm>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>СписокЗаказов</Form>
+			<Form>ВыборЗначенийВИерархическомСписке</Form>
+			<Form>ПереходКСтраницеПоНомеру</Form>
+			<Form>ПечатныеФормы</Form>
+			<Form>КарточкаЗаказа</Form>
+			<Form>ВыборВремениПередачиГруза</Form>
+			<Form>СписокТерминалов</Form>
+			<Form>КарточкаГрузоперевозчика</Form>
+			<Form>КарточкаТерминала</Form>
+			<Form>ОтслеживаниеЗаказа</Form>
+			<Form>Форма</Form>
+			<Form>АвторизацияВЛКГрузоперевозчика</Form>
+			<Form>НастройкиРаботыСПеревозчиками</Form>
+			<Form>БыстрыйЗаказ</Form>
+			<Template>ДетализацияСтоимости</Template>
+			<Template>ВыбранныеУслугиТарифа</Template>
+			<Template>Заказ</Template>
+			<Template>ОтслеживаниеЗаказа</Template>
+			<Template>Грузоперевозчик</Template>
+			<Template>Терминал</Template>
+			<Command uuid="c8b3928d-3e7c-4ef8-907e-2176a4ed870e">
+				<Properties>
+					<Name>СписокЗаказов</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заказы сервиса 1С:Доставка</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>NavigationPanelOrdinary</Group>
+					<CommandParameterType/>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
+			<Command uuid="eabfc8d6-810f-416c-9385-f5b55355722e">
+				<Properties>
+					<Name>ОтслеживаниеЗаказа</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Трекер заказов сервиса 1С:Доставка</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>NavigationPanelOrdinary</Group>
+					<CommandParameterType/>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
+			<Command uuid="72eed356-2ecc-4721-a788-b58d66ac4fe4">
+				<Properties>
+					<Name>НастройкиРаботыСПеревозчиками</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки работы с перевозчиками сервиса 1С:Доставка</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>NavigationPanelOrdinary</Group>
+					<CommandParameterType/>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>
