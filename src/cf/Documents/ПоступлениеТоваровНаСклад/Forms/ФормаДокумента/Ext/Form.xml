@@ -517,17 +517,37 @@
 									<ThroughAlign>DontUse</ThroughAlign>
 									<ExtendedTooltip name="ШапкаПравоExtendedTooltip" id="1033"/>
 									<ChildItems>
-										<InputField name="СтатусПодтверждения" id="1851">
-											<DataPath>Объект.СтатусПодтверждения</DataPath>
-											<Enabled>false</Enabled>
-											<AutoMaxWidth>false</AutoMaxWidth>
-											<MaxWidth>34</MaxWidth>
-											<ContextMenu name="СтатусПодтвержденияКонтекстноеМеню" id="1852"/>
-											<ExtendedTooltip name="СтатусПодтвержденияРасширеннаяПодсказка" id="1853"/>
-											<Events>
-												<Event name="OnChange">СтатусПодтвержденияПриИзменении</Event>
-											</Events>
-										</InputField>
+										<UsualGroup name="Группа1" id="1857">
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="1858"/>
+											<ChildItems>
+												<InputField name="СтатусПодтверждения" id="1851">
+													<DataPath>Объект.СтатусПодтверждения</DataPath>
+													<Enabled>false</Enabled>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>34</MaxWidth>
+													<ContextMenu name="СтатусПодтвержденияКонтекстноеМеню" id="1852"/>
+													<ExtendedTooltip name="СтатусПодтвержденияРасширеннаяПодсказка" id="1853"/>
+													<Events>
+														<Event name="OnChange">СтатусПодтвержденияПриИзменении</Event>
+													</Events>
+												</InputField>
+												<InputField name="СтатусПодтвержденияДата" id="1854">
+													<DataPath>1/0:b4dc4535-fa82-4250-ab3d-4fe841503fd3</DataPath>
+													<Enabled>false</Enabled>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>от</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="СтатусПодтвержденияДатаКонтекстноеМеню" id="1855"/>
+													<ExtendedTooltip name="СтатусПодтвержденияДатаРасширеннаяПодсказка" id="1856"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
 										<InputField name="ХозяйственнаяОперация" id="1798">
 											<DataPath>Объект.ХозяйственнаяОперация</DataPath>
 											<TitleHeight>1</TitleHeight>

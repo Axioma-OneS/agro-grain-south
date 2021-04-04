@@ -28,6 +28,9 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Номенклатура</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЗаказПоставщикуПрисоединенныеФайлы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Контрагенты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ЮрФизЛицо</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ВводКонтактнойИнформации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РасширенныйВводКонтактнойИнформации</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
