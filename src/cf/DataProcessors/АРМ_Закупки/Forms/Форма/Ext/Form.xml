@@ -325,6 +325,141 @@
 								</UsualGroup>
 							</ChildItems>
 						</Page>
+						<Page name="СтраницаРеестрКонтрагентов" id="145">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Реестр контрагентов</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страница реестр контрагентов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="СтраницаРеестрКонтрагентовРасширеннаяПодсказка" id="146"/>
+							<ChildItems>
+								<InputField name="РеестрКонтрагентов_ВидКонтрагента" id="313">
+									<DataPath>РеестрКонтрагентов_ВидКонтрагента</DataPath>
+									<ClearButton>true</ClearButton>
+									<ContextMenu name="РеестрКонтрагентов_ВидКонтрагентаКонтекстноеМеню" id="314"/>
+									<ExtendedTooltip name="РеестрКонтрагентов_ВидКонтрагентаРасширеннаяПодсказка" id="315"/>
+									<Events>
+										<Event name="OnChange">РеестрКонтрагентов_ВидКонтрагентаПриИзменении</Event>
+									</Events>
+								</InputField>
+								<Table name="Контрагент_ДС_РеестрКонтрагентов" id="321">
+									<Representation>Tree</Representation>
+									<UseAlternationRowColor>true</UseAlternationRowColor>
+									<EnableStartDrag>true</EnableStartDrag>
+									<DataPath>РеестрКонтрагентов_ДС_РеестрКонтрагентов</DataPath>
+									<RowPictureDataPath>РеестрКонтрагентов_ДС_РеестрКонтрагентов.DefaultPicture</RowPictureDataPath>
+									<CommandSet>
+										<ExcludedCommand>DynamicListStandardSettings</ExcludedCommand>
+										<ExcludedCommand>ListSettings</ExcludedCommand>
+										<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
+										<ExcludedCommand>OutputList</ExcludedCommand>
+										<ExcludedCommand>Refresh</ExcludedCommand>
+										<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
+										<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+										<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+									</CommandSet>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<AutoRefresh>false</AutoRefresh>
+									<AutoRefreshPeriod>60</AutoRefreshPeriod>
+									<Period>
+										<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+										<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+										<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+									</Period>
+									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+									<RestoreCurrentRow>false</RestoreCurrentRow>
+									<TopLevelParent xsi:nil="true"/>
+									<ShowRoot>false</ShowRoot>
+									<AllowRootChoice>false</AllowRootChoice>
+									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<ContextMenu name="Контрагент_ДС_РеестрКонтрагентовКонтекстноеМеню" id="322"/>
+									<AutoCommandBar name="Контрагент_ДС_РеестрКонтрагентовКоманднаяПанель" id="323">
+										<ChildItems>
+											<Button name="СоздатьПартнера_ИзРеестра" id="319">
+												<Type>CommandBarButton</Type>
+												<Representation>PictureAndText</Representation>
+												<CommandName>Form.Command.СоздатьПартнера</CommandName>
+												<ExtendedTooltip name="СоздатьПартнера_ИзРеестраРасширеннаяПодсказка" id="320"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="Контрагент_ДС_РеестрКонтрагентовРасширеннаяПодсказка" id="324"/>
+									<SearchStringAddition name="Контрагент_ДС_РеестрКонтрагентовСтрокаПоиска" id="325">
+										<AdditionSource>
+											<Item>Контрагент_ДС_РеестрКонтрагентов</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="Контрагент_ДС_РеестрКонтрагентовСтрокаПоискаКонтекстноеМеню" id="326"/>
+										<ExtendedTooltip name="Контрагент_ДС_РеестрКонтрагентовСтрокаПоискаРасширеннаяПодсказка" id="327"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="Контрагент_ДС_РеестрКонтрагентовСостояниеПросмотра" id="328">
+										<AdditionSource>
+											<Item>Контрагент_ДС_РеестрКонтрагентов</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="Контрагент_ДС_РеестрКонтрагентовСостояниеПросмотраКонтекстноеМеню" id="329"/>
+										<ExtendedTooltip name="Контрагент_ДС_РеестрКонтрагентовСостояниеПросмотраРасширеннаяПодсказка" id="330"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="Контрагент_ДС_РеестрКонтрагентовУправлениеПоиском" id="331">
+										<AdditionSource>
+											<Item>Контрагент_ДС_РеестрКонтрагентов</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="Контрагент_ДС_РеестрКонтрагентовУправлениеПоискомКонтекстноеМеню" id="332"/>
+										<ExtendedTooltip name="Контрагент_ДС_РеестрКонтрагентовУправлениеПоискомРасширеннаяПодсказка" id="333"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="Selection">Контрагент_ДС_РеестрКонтрагентовВыбор</Event>
+									</Events>
+									<ChildItems>
+										<LabelField name="Контрагент_ДС_РеестрКонтрагентовНаименование" id="343">
+											<DataPath>РеестрКонтрагентов_ДС_РеестрКонтрагентов.Наименование</DataPath>
+											<ContextMenu name="Контрагент_ДС_РеестрКонтрагентовНаименованиеКонтекстноеМеню" id="344"/>
+											<ExtendedTooltip name="Контрагент_ДС_РеестрКонтрагентовНаименованиеРасширеннаяПодсказка" id="345"/>
+										</LabelField>
+										<LabelField name="Контрагент_ДС_РеестрКонтрагентовПочта" id="349">
+											<DataPath>РеестрКонтрагентов_ДС_РеестрКонтрагентов.Почта</DataPath>
+											<ContextMenu name="Контрагент_ДС_РеестрКонтрагентовПочтаКонтекстноеМеню" id="350"/>
+											<ExtendedTooltip name="Контрагент_ДС_РеестрКонтрагентовПочтаРасширеннаяПодсказка" id="351"/>
+										</LabelField>
+										<LabelField name="Контрагент_ДС_РеестрКонтрагентовНомерТелефона" id="346">
+											<DataPath>РеестрКонтрагентов_ДС_РеестрКонтрагентов.НомерТелефона</DataPath>
+											<ContextMenu name="Контрагент_ДС_РеестрКонтрагентовНомерТелефонаКонтекстноеМеню" id="347"/>
+											<ExtendedTooltip name="Контрагент_ДС_РеестрКонтрагентовНомерТелефонаРасширеннаяПодсказка" id="348"/>
+										</LabelField>
+										<LabelField name="Контрагент_ДС_РеестрКонтрагентовЮридическийАдрес" id="355">
+											<DataPath>РеестрКонтрагентов_ДС_РеестрКонтрагентов.ЮридическийАдрес</DataPath>
+											<ContextMenu name="Контрагент_ДС_РеестрКонтрагентовЮридическийАдресКонтекстноеМеню" id="356"/>
+											<ExtendedTooltip name="Контрагент_ДС_РеестрКонтрагентовЮридическийАдресРасширеннаяПодсказка" id="357"/>
+										</LabelField>
+										<LabelField name="Контрагент_ДС_РеестрКонтрагентовСоздатьДоговорСКонтрагентом" id="352">
+											<DataPath>РеестрКонтрагентов_ДС_РеестрКонтрагентов.СоздатьДоговорСКонтрагентом</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>+</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Контрагент_ДС_РеестрКонтрагентовСоздатьДоговорСКонтрагентомКонтекстноеМеню" id="353"/>
+											<ExtendedTooltip name="Контрагент_ДС_РеестрКонтрагентовСоздатьДоговорСКонтрагентомРасширеннаяПодсказка" id="354"/>
+										</LabelField>
+										<CheckBoxField name="Контрагент_ДС_РеестрКонтрагентовЕстьДоговора" id="334">
+											<DataPath>РеестрКонтрагентов_ДС_РеестрКонтрагентов.ЕстьДоговора</DataPath>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="Контрагент_ДС_РеестрКонтрагентовЕстьДоговораКонтекстноеМеню" id="335"/>
+											<ExtendedTooltip name="Контрагент_ДС_РеестрКонтрагентовЕстьДоговораРасширеннаяПодсказка" id="336"/>
+										</CheckBoxField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
 						<Page name="СтраницаРеестрДоговоров" id="141">
 							<Title>
 								<v8:item>
@@ -533,27 +668,6 @@
 										</InputField>
 									</ChildItems>
 								</UsualGroup>
-							</ChildItems>
-						</Page>
-						<Page name="СтраницаРеестрКонтрагентов" id="145">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Реестр контрагентов</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Страница реестр контрагентов</v8:content>
-								</v8:item>
-							</ToolTip>
-							<ExtendedTooltip name="СтраницаРеестрКонтрагентовРасширеннаяПодсказка" id="146"/>
-							<ChildItems>
-								<LabelDecoration name="Декорация3" id="159">
-									<ContextMenu name="Декорация3КонтекстноеМеню" id="160"/>
-									<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="161"/>
-								</LabelDecoration>
 							</ChildItems>
 						</Page>
 						<Page name="СтраницаДоговор" id="147">
@@ -1790,6 +1904,206 @@
 				<v8:Type>cfg:CatalogRef.ДоговорыКонтрагентов</v8:Type>
 				<v8:Type>cfg:CatalogRef.Партнеры</v8:Type>
 			</Type>
+		</Attribute>
+		<Attribute name="РеестрКонтрагентов_ВидКонтрагента" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид контрагента</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ЮрФизЛицо</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РеестрКонтрагентов_ДС_РеестрКонтрагентов" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Реестр контрагентов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	Контрагенты.Ссылка КАК КонтрагентСсылка,
+	Контрагенты.Наименование КАК Наименование,
+	"Поставщик продукции" КАК КатегорияКонтрагентов,
+	Партнеры.Код КАК Код,
+	Партнеры.Ссылка КАК ПартнерСсылка,
+	Контрагенты.ЮрФизЛицо КАК ЮрФизЛицо
+ПОМЕСТИТЬ втКонтрагент
+ИЗ
+	Справочник.Контрагенты КАК Контрагенты
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.Партнеры КАК Партнеры
+		ПО Контрагенты.Партнер = Партнеры.Ссылка
+			И (Партнеры.Поставщик)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Контрагенты.Ссылка,
+	Контрагенты.Наименование,
+	"Перевозчик",
+	Партнеры.Код,
+	Партнеры.Ссылка,
+	Контрагенты.ЮрФизЛицо
+ИЗ
+	Справочник.Контрагенты КАК Контрагенты
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.Партнеры КАК Партнеры
+		ПО Контрагенты.Партнер = Партнеры.Ссылка
+			И (Партнеры.Перевозчик)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Контрагенты.Ссылка,
+	Контрагенты.Наименование,
+	"Дополнительные услуги (Отдел закупки)",
+	Партнеры.Код,
+	Партнеры.Ссылка,
+	Контрагенты.ЮрФизЛицо
+ИЗ
+	Справочник.Контрагенты КАК Контрагенты
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.Партнеры КАК Партнеры
+		ПО Контрагенты.Партнер = Партнеры.Ссылка
+			И (Партнеры.ДопУслуги)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Контрагенты.Ссылка,
+	Контрагенты.Наименование,
+	"Хранение",
+	Партнеры.Код,
+	Партнеры.Ссылка,
+	Контрагенты.ЮрФизЛицо
+ИЗ
+	Справочник.Контрагенты КАК Контрагенты
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.Партнеры КАК Партнеры
+		ПО Контрагенты.Партнер = Партнеры.Ссылка
+			И (Партнеры.Хранение)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Контрагенты.Ссылка,
+	Контрагенты.Наименование,
+	"Без категории",
+	Партнеры.Код,
+	Партнеры.Ссылка,
+	Контрагенты.ЮрФизЛицо
+ИЗ
+	Справочник.Контрагенты КАК Контрагенты
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.Партнеры КАК Партнеры
+		ПО Контрагенты.Партнер = Партнеры.Ссылка
+			И (НЕ Партнеры.Поставщик)
+			И (НЕ Партнеры.Перевозчик)
+			И (НЕ Партнеры.ДопУслуги)
+			И (НЕ Партнеры.Хранение)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	втКонтрагент.КатегорияКонтрагентов КАК КатегорияКонтрагентов,
+	втКонтрагент.Наименование КАК Наименование,
+	ВЫБОР
+		КОГДА взДоговорыКонтрагента.КоличествоДоговоров &gt; 0
+			ТОГДА ИСТИНА
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ КАК ЕстьДоговора,
+	взАдресЭлектроннойПочты.Представление КАК Почта,
+	взТелефон.Представление КАК НомерТелефона,
+	взЮридическийАдрес.Представление КАК ЮридическийАдрес,
+	"+" КАК СоздатьДоговорСКонтрагентом,
+	втКонтрагент.Код КАК Код,
+	втКонтрагент.ЮрФизЛицо КАК ЮрФизЛицо
+ИЗ
+	втКонтрагент КАК втКонтрагент
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			ДоговорыКонтрагентов.Контрагент КАК Контрагент,
+			СУММА(1) КАК КоличествоДоговоров
+		ИЗ
+			Справочник.ДоговорыКонтрагентов КАК ДоговорыКонтрагентов
+		
+		СГРУППИРОВАТЬ ПО
+			ДоговорыКонтрагентов.Контрагент) КАК взДоговорыКонтрагента
+		ПО втКонтрагент.КонтрагентСсылка = взДоговорыКонтрагента.Контрагент
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			КонтрагентыКонтактнаяИнформация.Ссылка КАК Ссылка,
+			КонтрагентыКонтактнаяИнформация.АдресЭП КАК АдресЭП,
+			КонтрагентыКонтактнаяИнформация.Представление КАК Представление
+		ИЗ
+			Справочник.Контрагенты.КонтактнаяИнформация КАК КонтрагентыКонтактнаяИнформация
+		ГДЕ
+			КонтрагентыКонтактнаяИнформация.Тип = ЗНАЧЕНИЕ(Перечисление.ТипыКонтактнойИнформации.АдресЭлектроннойПочты)
+			И КонтрагентыКонтактнаяИнформация.Вид = ЗНАЧЕНИЕ(Справочник.ВидыКонтактнойИнформации.EmailКонтрагента)
+			И КонтрагентыКонтактнаяИнформация.АдресЭП &lt;&gt; "") КАК взАдресЭлектроннойПочты
+		ПО втКонтрагент.КонтрагентСсылка = взАдресЭлектроннойПочты.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			КонтрагентыКонтактнаяИнформация.Ссылка КАК Ссылка,
+			КонтрагентыКонтактнаяИнформация.НомерТелефона КАК НомерТелефона,
+			КонтрагентыКонтактнаяИнформация.Представление КАК Представление
+		ИЗ
+			Справочник.Контрагенты.КонтактнаяИнформация КАК КонтрагентыКонтактнаяИнформация
+		ГДЕ
+			КонтрагентыКонтактнаяИнформация.Тип = ЗНАЧЕНИЕ(Перечисление.ТипыКонтактнойИнформации.Телефон)
+			И КонтрагентыКонтактнаяИнформация.Вид = ЗНАЧЕНИЕ(Справочник.ВидыКонтактнойИнформации.ТелефонКонтрагента)
+			И КонтрагентыКонтактнаяИнформация.НомерТелефона &lt;&gt; "") КАК взТелефон
+		ПО втКонтрагент.КонтрагентСсылка = взТелефон.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			КонтрагентыКонтактнаяИнформация.Ссылка КАК Ссылка,
+			КонтрагентыКонтактнаяИнформация.Представление КАК Представление
+		ИЗ
+			Справочник.Контрагенты.КонтактнаяИнформация КАК КонтрагентыКонтактнаяИнформация
+		ГДЕ
+			КонтрагентыКонтактнаяИнформация.Тип = ЗНАЧЕНИЕ(Перечисление.ТипыКонтактнойИнформации.Адрес)
+			И КонтрагентыКонтактнаяИнформация.Вид = ЗНАЧЕНИЕ(Справочник.ВидыКонтактнойИнформации.ЮрАдресКонтрагента)
+			И КонтрагентыКонтактнаяИнформация.Представление &lt;&gt; ""
+			И КонтрагентыКонтактнаяИнформация.ВидДляСписка = ЗНАЧЕНИЕ(Справочник.ВидыКонтактнойИнформации.ЮрАдресКонтрагента)) КАК взЮридическийАдрес
+		ПО втКонтрагент.КонтрагентСсылка = взЮридическийАдрес.Ссылка
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ОтветственныеМенеджерыПартнера КАК ОтветственныеМенеджерыПартнера
+		ПО втКонтрагент.ПартнерСсылка = ОтветственныеМенеджерыПартнера.Партнер
+			И (ОтветственныеМенеджерыПартнера.Менеджер = &amp;ТекущийПользователь)</QueryText>
+				<KeyField>КатегорияКонтрагентов</KeyField>
+				<KeyField>Наименование</KeyField>
+				<KeyField>Код</KeyField>
+				<AutoSaveUserSettings>false</AutoSaveUserSettings>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Наименование</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>КатегорияКонтрагентов</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+					</dcsset:item>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+				</ListSettings>
+			</Settings>
 		</Attribute>
 	</Attributes>
 	<Commands>

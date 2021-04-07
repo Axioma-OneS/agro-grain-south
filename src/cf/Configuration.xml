@@ -8830,6 +8830,7 @@
 			<InformationRegister>ЦеныНоменклатурыПоставщиков</InformationRegister>
 			<InformationRegister>ШтрихкодыНоменклатуры</InformationRegister>
 			<InformationRegister>ЭлектронныеПодписи</InformationRegister>
+			<InformationRegister>ОтветственныеМенеджерыПартнера</InformationRegister>
 			<AccumulationRegister>БонусныеБаллы</AccumulationRegister>
 			<AccumulationRegister>ВыручкаИСебестоимостьПродаж</AccumulationRegister>
 			<AccumulationRegister>ГрафикОтгрузкиТоваров</AccumulationRegister>
