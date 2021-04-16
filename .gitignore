@@ -1,4 +1,5 @@
 out
+.vscode
 build/ib/1CHelpIndex
 build/ib/1Cv8FTxt
 build/ib/1Cv8IntegSrvc
@@ -10,6 +11,6 @@ build/ib/*.1cl
 build/ib/1Cv8tmp.1CD
 build/*.cf
 1Cv8.1CD
-src/cf/ConfigDumpInfo.xml
+ConfigDumpInfo.xml
 Доступы.txt
 DoNotCopy.txt
