@@ -2059,6 +2059,48 @@
 								</RadioButtonField>
 							</ChildItems>
 						</UsualGroup>
+						<UsualGroup name="ГруппаТипДоговора" id="872">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Тип договора</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа тип договора</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<ExtendedTooltip name="ГруппаТипДоговораРасширеннаяПодсказка" id="873"/>
+							<ChildItems>
+								<CheckBoxField name="Поставщик" id="874">
+									<DataPath>Объект.Поставщик</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПоставщикКонтекстноеМеню" id="875"/>
+									<ExtendedTooltip name="ПоставщикРасширеннаяПодсказка" id="876"/>
+								</CheckBoxField>
+								<CheckBoxField name="Перевозчик" id="877">
+									<DataPath>Объект.Перевозчик</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПеревозчикКонтекстноеМеню" id="878"/>
+									<ExtendedTooltip name="ПеревозчикРасширеннаяПодсказка" id="879"/>
+								</CheckBoxField>
+								<CheckBoxField name="ДопУслуги" id="880">
+									<DataPath>Объект.ДопУслуги</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ДопУслугиКонтекстноеМеню" id="881"/>
+									<ExtendedTooltip name="ДопУслугиРасширеннаяПодсказка" id="882"/>
+								</CheckBoxField>
+								<CheckBoxField name="Хранение" id="883">
+									<DataPath>Объект.Хранение</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ХранениеКонтекстноеМеню" id="884"/>
+									<ExtendedTooltip name="ХранениеРасширеннаяПодсказка" id="885"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
 						<UsualGroup name="ГруппаКонтролируемыеСделки" id="870">
 							<Title>
 								<v8:item>
