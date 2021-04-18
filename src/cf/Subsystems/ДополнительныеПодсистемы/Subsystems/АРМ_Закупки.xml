@@ -32,6 +32,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ВводКонтактнойИнформации</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РасширенныйВводКонтактнойИнформации</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ОтветственныеМенеджерыПартнера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СпособыДоставки</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
