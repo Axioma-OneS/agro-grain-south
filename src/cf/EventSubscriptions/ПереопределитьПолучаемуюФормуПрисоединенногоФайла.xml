@@ -75,6 +75,7 @@
 				<v8:Type>cfg:CatalogManager.ОтчетКомитентуПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogManager.СписаниеБезналичныхДенежныхСредствПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogManager.РегистрацияЦенНоменклатурыПоставщикаПрисоединенныеФайлы</v8:Type>
+				<v8:Type>cfg:CatalogManager.ЗаявкиНаУслугиПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogManager.ВыкупВозвратнойТарыКлиентомПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogManager.РеализацияУслугПрочихАктивовПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogManager.ДоговорыКонтрагентовПрисоединенныеФайлы</v8:Type>

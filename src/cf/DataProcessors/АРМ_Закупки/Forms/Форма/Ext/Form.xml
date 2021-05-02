@@ -2467,10 +2467,277 @@
 							</ToolTip>
 							<ExtendedTooltip name="СтраницаДопУслугиРасширеннаяПодсказка" id="152"/>
 							<ChildItems>
-								<LabelDecoration name="Декорация6" id="168">
-									<ContextMenu name="Декорация6КонтекстноеМеню" id="169"/>
-									<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="170"/>
-								</LabelDecoration>
+								<InputField name="ДопУслуги_ОписаниеУслуги" id="624">
+									<DataPath>ДопУслуги_ОписаниеУслуги</DataPath>
+									<ContextMenu name="ДопУслуги_ОписаниеУслугиКонтекстноеМеню" id="625"/>
+									<ExtendedTooltip name="ДопУслуги_ОписаниеУслугиРасширеннаяПодсказка" id="626"/>
+								</InputField>
+								<UsualGroup name="ГруппаДопУслугиПартнер" id="633">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа доп услуги партнер</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа доп услуги партнер</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаДопУслугиПартнерРасширеннаяПодсказка" id="634"/>
+									<ChildItems>
+										<InputField name="ДопУслуги_Партнер" id="627">
+											<DataPath>ДопУслуги_Партнер</DataPath>
+											<ChoiceParameters>
+												<app:item name="Отбор.ДопУслуги">
+													<app:value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xs:boolean">true</Value>
+													</app:value>
+												</app:item>
+											</ChoiceParameters>
+											<ContextMenu name="ДопУслуги_ПартнерКонтекстноеМеню" id="628"/>
+											<ExtendedTooltip name="ДопУслуги_ПартнерРасширеннаяПодсказка" id="629"/>
+										</InputField>
+										<Button name="СоздатьПартнера3" id="637">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.СоздатьПартнера</CommandName>
+											<ExtendedTooltip name="СоздатьПартнера3РасширеннаяПодсказка" id="638"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаДопУслугиДоговор" id="635">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа доп услуги договор</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа доп услуги договор</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаДопУслугиДоговорРасширеннаяПодсказка" id="636"/>
+									<ChildItems>
+										<InputField name="ДопУслуги_Договор" id="630">
+											<DataPath>ДопУслуги_Договор</DataPath>
+											<ChoiceParameterLinks>
+												<xr:Link>
+													<xr:Name>Отбор.Партнер</xr:Name>
+													<xr:DataPath xsi:type="xs:string">ДопУслуги_Партнер</xr:DataPath>
+													<xr:ValueChange>Clear</xr:ValueChange>
+												</xr:Link>
+											</ChoiceParameterLinks>
+											<ContextMenu name="ДопУслуги_ДоговорКонтекстноеМеню" id="631"/>
+											<ExtendedTooltip name="ДопУслуги_ДоговорРасширеннаяПодсказка" id="632"/>
+										</InputField>
+										<Button name="СоздатьДоговор1" id="639">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.СоздатьДоговор</CommandName>
+											<ExtendedTooltip name="СоздатьДоговор1РасширеннаяПодсказка" id="640"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<InputField name="ДопУслуги_НомерЗаявкиСпецификации" id="641">
+									<DataPath>ДопУслуги_НомерЗаявкиСпецификации</DataPath>
+									<ContextMenu name="ДопУслуги_НомерЗаявкиСпецификацииКонтекстноеМеню" id="642"/>
+									<ExtendedTooltip name="ДопУслуги_НомерЗаявкиСпецификацииРасширеннаяПодсказка" id="643"/>
+								</InputField>
+								<InputField name="ДопУслуги_ДатаЗаключения" id="644">
+									<DataPath>ДопУслуги_ДатаЗаключения</DataPath>
+									<ContextMenu name="ДопУслуги_ДатаЗаключенияКонтекстноеМеню" id="645"/>
+									<ExtendedTooltip name="ДопУслуги_ДатаЗаключенияРасширеннаяПодсказка" id="646"/>
+								</InputField>
+								<InputField name="ДопУслуги_ДатаИсполнения" id="696">
+									<DataPath>ДопУслуги_ДатаИсполнения</DataPath>
+									<ContextMenu name="ДопУслуги_ДатаИсполненияКонтекстноеМеню" id="697"/>
+									<ExtendedTooltip name="ДопУслуги_ДатаИсполненияРасширеннаяПодсказка" id="698"/>
+								</InputField>
+								<UsualGroup name="ГруппаДопУслугиУсловияЗаказаУслуги" id="665">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Условия заказа услуги</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа доп услуги условия заказа услуги</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ExtendedTooltip name="ГруппаДопУслугиУсловияЗаказаУслугиРасширеннаяПодсказка" id="666"/>
+									<ChildItems>
+										<InputField name="ДопУслуги_Сумма" id="659">
+											<DataPath>ДопУслуги_Сумма</DataPath>
+											<ContextMenu name="ДопУслуги_СуммаКонтекстноеМеню" id="660"/>
+											<ExtendedTooltip name="ДопУслуги_СуммаРасширеннаяПодсказка" id="661"/>
+											<Events>
+												<Event name="OnChange">ДопУслуги_СуммаПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="ДопУслуги_СтавкаНДС" id="653">
+											<DataPath>ДопУслуги_СтавкаНДС</DataPath>
+											<ContextMenu name="ДопУслуги_СтавкаНДСКонтекстноеМеню" id="654"/>
+											<ExtendedTooltip name="ДопУслуги_СтавкаНДСРасширеннаяПодсказка" id="655"/>
+											<Events>
+												<Event name="OnChange">ДопУслуги_СтавкаНДСПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="ДопУслуги_СуммаНДС" id="656">
+											<DataPath>ДопУслуги_СуммаНДС</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<ContextMenu name="ДопУслуги_СуммаНДСКонтекстноеМеню" id="657"/>
+											<ExtendedTooltip name="ДопУслуги_СуммаНДСРасширеннаяПодсказка" id="658"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<InputField name="ДопУслуги_Распоряжение" id="662">
+									<DataPath>ДопУслуги_Распоряжение</DataPath>
+									<ChoiceForm>Document.ЗаказПоставщику.Form.ФормаВыбораАРМЗакупки_ДопУслуги</ChoiceForm>
+									<ContextMenu name="ДопУслуги_РаспоряжениеКонтекстноеМеню" id="663"/>
+									<ExtendedTooltip name="ДопУслуги_РаспоряжениеРасширеннаяПодсказка" id="664"/>
+								</InputField>
+								<UsualGroup name="ГруппаДопУслугиПрочее" id="667">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Прочее</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа прочее</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ExtendedTooltip name="ГруппаДопУслугиПрочееРасширеннаяПодсказка" id="668"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаДопУслугиПрисоединенныйФайл" id="669">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа присоединенный файл</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа присоединенный файл</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаДопУслугиПрисоединенныйФайлРасширеннаяПодсказка" id="670"/>
+											<ChildItems>
+												<Table name="ДопУслугиСписокПрисоединенныхФайлов" id="671">
+													<Representation>List</Representation>
+													<Height>2</Height>
+													<Header>false</Header>
+													<HorizontalLines>false</HorizontalLines>
+													<VerticalLines>false</VerticalLines>
+													<AutoInsertNewRow>true</AutoInsertNewRow>
+													<HorizontalStretch>false</HorizontalStretch>
+													<DataPath>СписокПрисоединенныхФайлов</DataPath>
+													<RowPictureDataPath>СписокПрисоединенныхФайлов.Picture</RowPictureDataPath>
+													<ContextMenu name="ДопУслугиСписокПрисоединенныхФайловКонтекстноеМеню" id="672"/>
+													<AutoCommandBar name="ДопУслугиСписокПрисоединенныхФайловКоманднаяПанель" id="673">
+														<Autofill>false</Autofill>
+													</AutoCommandBar>
+													<ExtendedTooltip name="ДопУслугиСписокПрисоединенныхФайловРасширеннаяПодсказка" id="674"/>
+													<SearchStringAddition name="ДопУслугиСписокПрисоединенныхФайловСтрокаПоиска" id="675">
+														<Enabled>false</Enabled>
+														<AdditionSource>
+															<Item>ДопУслугиСписокПрисоединенныхФайлов</Item>
+															<Type>SearchStringRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="ДопУслугиСписокПрисоединенныхФайловСтрокаПоискаКонтекстноеМеню" id="676"/>
+														<ExtendedTooltip name="ДопУслугиСписокПрисоединенныхФайловСтрокаПоискаРасширеннаяПодсказка" id="677"/>
+													</SearchStringAddition>
+													<ViewStatusAddition name="ДопУслугиСписокПрисоединенныхФайловСостояниеПросмотра" id="678">
+														<Enabled>false</Enabled>
+														<AdditionSource>
+															<Item>ДопУслугиСписокПрисоединенныхФайлов</Item>
+															<Type>ViewStatusRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="ДопУслугиСписокПрисоединенныхФайловСостояниеПросмотраКонтекстноеМеню" id="679"/>
+														<ExtendedTooltip name="ДопУслугиСписокПрисоединенныхФайловСостояниеПросмотраРасширеннаяПодсказка" id="680"/>
+													</ViewStatusAddition>
+													<SearchControlAddition name="ДопУслугиСписокПрисоединенныхФайловУправлениеПоиском" id="681">
+														<Enabled>false</Enabled>
+														<AdditionSource>
+															<Item>ДопУслугиСписокПрисоединенныхФайлов</Item>
+															<Type>SearchControl</Type>
+														</AdditionSource>
+														<ContextMenu name="ДопУслугиСписокПрисоединенныхФайловУправлениеПоискомКонтекстноеМеню" id="682"/>
+														<ExtendedTooltip name="ДопУслугиСписокПрисоединенныхФайловУправлениеПоискомРасширеннаяПодсказка" id="683"/>
+													</SearchControlAddition>
+													<ChildItems>
+														<LabelField name="СписокПрисоединенныхФайловЗначение2" id="684">
+															<DataPath>СписокПрисоединенныхФайлов.Value</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<CellHyperlink>true</CellHyperlink>
+															<MaxWidth>1</MaxWidth>
+															<ContextMenu name="СписокПрисоединенныхФайловЗначение2КонтекстноеМеню" id="685"/>
+															<ExtendedTooltip name="СписокПрисоединенныхФайловЗначение2РасширеннаяПодсказка" id="686"/>
+														</LabelField>
+													</ChildItems>
+												</Table>
+												<UsualGroup name="ГруппаКомандыДопУслугиПрисоединенныеФайлы" id="687">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа команды присоединенные файлы</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа команды присоединенные файлы</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаКомандыДопУслугиПрисоединенныеФайлыРасширеннаяПодсказка" id="688"/>
+													<ChildItems>
+														<Button name="ДопУслуги_СоздатьПрисоединенныйФайл" id="689">
+															<Type>UsualButton</Type>
+															<CommandName>Form.Command.СоздатьПрисоединенныйФайл</CommandName>
+															<ExtendedTooltip name="ДопУслуги_СоздатьПрисоединенныйФайлРасширеннаяПодсказка" id="690"/>
+														</Button>
+														<Button name="ДопУслуги_СохранитьПрисоединенныйФайл" id="691">
+															<Type>UsualButton</Type>
+															<CommandName>Form.Command.СохранитьПрисоединенныйФайл</CommandName>
+															<ExtendedTooltip name="ДопУслуги_СохранитьПрисоединенныйФайлРасширеннаяПодсказка" id="692"/>
+														</Button>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+										<InputField name="ДопУслугиКомментарий" id="693">
+											<DataPath>Комментарий</DataPath>
+											<VerticalStretch>false</VerticalStretch>
+											<MultiLine>true</MultiLine>
+											<ContextMenu name="ДопУслугиКомментарийКонтекстноеМеню" id="694"/>
+											<ExtendedTooltip name="ДопУслугиКомментарийРасширеннаяПодсказка" id="695"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
 							</ChildItems>
 						</Page>
 					</ChildItems>
@@ -2583,6 +2850,31 @@
 											<Type>UsualButton</Type>
 											<CommandName>Form.Command.СохранитьИПерейтиКСозданиюДоговора</CommandName>
 											<ExtendedTooltip name="СохранитьИПерейтиКСозданиюДоговораРасширеннаяПодсказка" id="312"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаДоговор" id="699">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа договор</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа договор</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаДоговорРасширеннаяПодсказка" id="700"/>
+									<ChildItems>
+										<Button name="СохранитьИПерейтиКСозданиюСпецификации" id="701">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.СохранитьИПерейтиКСозданиюСпецификации</CommandName>
+											<ExtendedTooltip name="СохранитьИПерейтиКСозданиюСпецификацииРасширеннаяПодсказка" id="702"/>
 										</Button>
 									</ChildItems>
 								</UsualGroup>
@@ -3941,6 +4233,141 @@
 				<v8:Type>cfg:DocumentRef.ПоступлениеТоваровНаСклад</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="ДопУслуги_ОписаниеУслуги" id="75">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание услуги</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ОписаниеУслугиДляЗаявки</v8:Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ДопУслуги_Партнер" id="76">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поставщик услуги</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Партнеры</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ДопУслуги_Договор" id="77">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>В рамках договора</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ДоговорыКонтрагентов</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ДопУслуги_НомерЗаявкиСпецификации" id="78">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер заявки/спецификации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ДопУслуги_ДатаЗаключения" id="79">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата заключения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ДопУслуги_ДатаИсполнения" id="80">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Крайний срок исполнения услуги</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ДопУслуги_Сумма" id="81">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стоимость с НДС</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:DefinedType.ДенежнаяСуммаНеотрицательная</v8:TypeSet>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ДопУслуги_СтавкаНДС" id="82">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ставка НДС</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:DefinedType.СтавкаНДС</v8:TypeSet>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ДопУслуги_СуммаНДС" id="83">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>НДС</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:DefinedType.ДенежнаяСуммаНеотрицательная</v8:TypeSet>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ДопУслуги_Распоряжение" id="84">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>В рамках спецификации на товар</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DocumentRef.ЗаказПоставщику</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ОсновноеМеню" id="1">
@@ -4401,6 +4828,26 @@
 			</Picture>
 			<Action>СоздатьСпецификацию</Action>
 			<Representation>Picture</Representation>
+		</Command>
+		<Command name="СохранитьИПерейтиКСозданиюСпецификации" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить и перейти к созданию спецификации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить и перейти к созданию спецификации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.СледующийШаг</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СохранитьИПерейтиКСозданиюСпецификации</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 	</Commands>
 	<Parameters>

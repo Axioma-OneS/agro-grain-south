@@ -38,6 +38,16 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТранспортныеСредства</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ФизическиеЛица</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеТоваровНаСклад</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗаявкаНаУслуги</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ДобавлениеИзменениеЗаявокНаУслуги</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеЗаявокНаУслуги</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ОписаниеУслугиДляЗаявки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыЗаявокНаУслуги</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПриобретениеУслугПрочихАктивов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЗаданиеНаПеревозкуПрисоединенныеФайлы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПриобретениеУслугПрочихАктивовПрисоединенныеФайлы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПоступлениеТоваровНаСкладПрисоединенныеФайлы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЗаявкиНаУслугиПрисоединенныеФайлы</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

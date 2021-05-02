@@ -3473,6 +3473,7 @@
 			<Form>ФормаЗакрытия</Form>
 			<Form>ФормаДокумента</Form>
 			<Form>СозданиеЗаказовПоставщикамНаОсновании</Form>
+			<Form>ФормаВыбораАРМЗакупки_ДопУслуги</Form>
 			<TabularSection uuid="dcee393b-d797-4bfd-be64-3bc288149128">
 				<InternalInfo>
 					<xr:GeneratedType name="DocumentTabularSection.ЗаказПоставщику.Товары" category="TabularSection">

@@ -2400,6 +2400,8 @@
 			<Role>ПросмотрОтчетКоммерческогоДиректора</Role>
 			<Role>ИспользоватьАРМ_Закупки</Role>
 			<Role>ИспользоватьДополнительныеПодсистемы</Role>
+			<Role>ДобавлениеИзменениеЗаявокНаУслуги</Role>
+			<Role>ЧтениеЗаявокНаУслуги</Role>
 			<CommonTemplate>ГеографическаяСхемаКартаМира</CommonTemplate>
 			<CommonTemplate>ГеографическаяСхемаРоссияРегионыИВсеГорода</CommonTemplate>
 			<CommonTemplate>ГеографическаяСхемаРоссияРегионыИСтолицы</CommonTemplate>
@@ -7024,6 +7026,7 @@
 			<Catalog>ЭквайринговыеТерминалы</Catalog>
 			<Catalog>ЭлектронноеПисьмоВходящееПрисоединенныеФайлы</Catalog>
 			<Catalog>ЭлектронноеПисьмоИсходящееПрисоединенныеФайлы</Catalog>
+			<Catalog>ЗаявкиНаУслугиПрисоединенныеФайлы</Catalog>
 			<Document>АвансовыйОтчет</Document>
 			<Document>АктВыполненныхРабот</Document>
 			<Document>АктОРасхожденияхПослеОтгрузки</Document>
@@ -7219,6 +7222,7 @@
 			<Document>ЭлектронноеПисьмоИсходящее</Document>
 			<Document>ЭлектронныйДокументВходящий</Document>
 			<Document>ЭлектронныйДокументИсходящий</Document>
+			<Document>ЗаявкаНаУслуги</Document>
 			<DocumentNumerator>ДокументыРеализацииТоваров</DocumentNumerator>
 			<DocumentNumerator>ОтчетыКомиссионеров</DocumentNumerator>
 			<DocumentNumerator>СчетаФактурыВыданные</DocumentNumerator>
@@ -7877,6 +7881,8 @@
 			<Enum>ЮрФизЛицо</Enum>
 			<Enum>СтатусыПодтверждения</Enum>
 			<Enum>ТипыПеревозки</Enum>
+			<Enum>ОписаниеУслугиДляЗаявки</Enum>
+			<Enum>СтатусыЗаявокНаУслуги</Enum>
 			<Report>ABCXYZАнализНоменклатуры</Report>
 			<Report>ABCXYZРаспределениеКлиентов</Report>
 			<Report>АнализВерсийОбъектов</Report>
