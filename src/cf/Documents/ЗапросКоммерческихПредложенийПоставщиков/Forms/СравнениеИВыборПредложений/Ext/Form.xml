@@ -471,7 +471,7 @@
 																	<TitleLocation>None</TitleLocation>
 																	<EditMode>EnterOnInput</EditMode>
 																	<HeaderPicture>
-																		<xr:Ref>CommonPicture.Информация</xr:Ref>
+																		<xr:Ref>CommonPicture.Информация1</xr:Ref>
 																		<xr:LoadTransparent>false</xr:LoadTransparent>
 																	</HeaderPicture>
 																	<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>

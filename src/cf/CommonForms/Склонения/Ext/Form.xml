@@ -142,7 +142,7 @@
 			<ChildItems>
 				<PictureDecoration name="ДекорацияКартинкаПредупреждение" id="52">
 					<Picture>
-						<xr:Ref>CommonPicture.Информация</xr:Ref>
+						<xr:Ref>CommonPicture.Информация1</xr:Ref>
 						<xr:LoadTransparent>false</xr:LoadTransparent>
 					</Picture>
 					<FileDragMode>AsFile</FileDragMode>

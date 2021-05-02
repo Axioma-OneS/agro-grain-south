@@ -717,7 +717,7 @@
 																</v8:item>
 															</ToolTip>
 															<Picture>
-																<xr:Ref>CommonPicture.Информация</xr:Ref>
+																<xr:Ref>CommonPicture.Информация1</xr:Ref>
 																<xr:LoadTransparent>false</xr:LoadTransparent>
 															</Picture>
 															<FileDragMode>AsFile</FileDragMode>
@@ -752,6 +752,13 @@
 											<MaxWidth>28</MaxWidth>
 											<ContextMenu name="ОтветственныйКонтекстноеМеню" id="1314"/>
 											<ExtendedTooltip name="ОтветственныйExtendedTooltip" id="1435"/>
+										</InputField>
+										<InputField name="ДоговорСПоставщиком" id="1791">
+											<DataPath>Объект.ДоговорСПоставщиком</DataPath>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>28</MaxWidth>
+											<ContextMenu name="ДоговорСПоставщикомКонтекстноеМеню" id="1792"/>
+											<ExtendedTooltip name="ДоговорСПоставщикомРасширеннаяПодсказка" id="1793"/>
 										</InputField>
 									</ChildItems>
 								</UsualGroup>

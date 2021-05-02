@@ -107,7 +107,7 @@
 				<PictureDecoration name="КартинкаИнформация" id="1229">
 					<Width>3</Width>
 					<Picture>
-						<xr:Ref>CommonPicture.Информация</xr:Ref>
+						<xr:Ref>CommonPicture.Информация1</xr:Ref>
 						<xr:LoadTransparent>false</xr:LoadTransparent>
 					</Picture>
 					<ContextMenu name="КартинкаИнформацияКонтекстноеМеню" id="1230"/>
@@ -919,7 +919,7 @@
 										<PictureDecoration name="Декорация13" id="540">
 											<SkipOnInput>false</SkipOnInput>
 											<Picture>
-												<xr:Ref>CommonPicture.Информация</xr:Ref>
+												<xr:Ref>CommonPicture.Информация1</xr:Ref>
 												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</Picture>
 											<FileDragMode>AsFile</FileDragMode>

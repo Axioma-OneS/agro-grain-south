@@ -360,7 +360,7 @@
 											<HorizontalAlign>Left</HorizontalAlign>
 											<EditMode>EnterOnInput</EditMode>
 											<HeaderPicture>
-												<xr:Ref>CommonPicture.Информация</xr:Ref>
+												<xr:Ref>CommonPicture.Информация1</xr:Ref>
 												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</HeaderPicture>
 											<Width>4</Width>
@@ -1184,7 +1184,7 @@
 						</v8:item>
 					</Title>
 					<Picture>
-						<xr:Ref>CommonPicture.Информация</xr:Ref>
+						<xr:Ref>CommonPicture.Информация1</xr:Ref>
 						<xr:LoadTransparent>false</xr:LoadTransparent>
 					</Picture>
 					<FileDragMode>AsFile</FileDragMode>

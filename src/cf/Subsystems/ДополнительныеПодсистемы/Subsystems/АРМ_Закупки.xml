@@ -33,6 +33,11 @@
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РасширенныйВводКонтактнойИнформации</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ОтветственныеМенеджерыПартнера</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.СпособыДоставки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗаданиеНаПеревозку</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыЗаданийНаПеревозку</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТранспортныеСредства</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ФизическиеЛица</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеТоваровНаСклад</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

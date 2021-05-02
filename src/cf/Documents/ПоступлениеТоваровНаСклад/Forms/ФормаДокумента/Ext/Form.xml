@@ -501,6 +501,11 @@
 												<Event name="StartChoice">СоглашениеНачалоВыбора</Event>
 											</Events>
 										</InputField>
+										<InputField name="ПотериНаПеревозке" id="1859">
+											<DataPath>Объект.ПотериНаПеревозке</DataPath>
+											<ContextMenu name="ПотериНаПеревозкеКонтекстноеМеню" id="1860"/>
+											<ExtendedTooltip name="ПотериНаПеревозкеРасширеннаяПодсказка" id="1861"/>
+										</InputField>
 									</ChildItems>
 								</UsualGroup>
 								<UsualGroup name="ШапкаПраво" id="93">
