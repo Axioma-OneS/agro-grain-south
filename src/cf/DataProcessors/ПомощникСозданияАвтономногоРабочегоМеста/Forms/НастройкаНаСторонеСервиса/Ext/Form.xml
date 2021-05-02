@@ -77,7 +77,7 @@
 											<Width>2</Width>
 											<Height>2</Height>
 											<Picture>
-												<xr:Ref>CommonPicture.Информация</xr:Ref>
+												<xr:Ref>CommonPicture.Информация1</xr:Ref>
 												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</Picture>
 											<FileDragMode>AsFile</FileDragMode>

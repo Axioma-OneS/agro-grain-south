@@ -294,7 +294,7 @@
 			<ChildItems>
 				<PictureDecoration name="Декорация3" id="246">
 					<Picture>
-						<xr:Ref>CommonPicture.Информация</xr:Ref>
+						<xr:Ref>CommonPicture.Информация1</xr:Ref>
 						<xr:LoadTransparent>true</xr:LoadTransparent>
 					</Picture>
 					<FileDragMode>AsFile</FileDragMode>

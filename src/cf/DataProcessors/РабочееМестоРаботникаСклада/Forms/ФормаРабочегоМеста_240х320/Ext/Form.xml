@@ -4422,7 +4422,7 @@
 		</Command>
 		<Command name="ОсновноеМенюИнформация" id="10">
 			<Picture>
-				<xr:Ref>CommonPicture.Информация</xr:Ref>
+				<xr:Ref>CommonPicture.Информация1</xr:Ref>
 				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>ОсновноеМенюИнформация</Action>
@@ -4580,7 +4580,7 @@
 		</Command>
 		<Command name="СканированиеИнформация" id="7">
 			<Picture>
-				<xr:Ref>CommonPicture.Информация</xr:Ref>
+				<xr:Ref>CommonPicture.Информация1</xr:Ref>
 				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>СканированиеИнформация</Action>
