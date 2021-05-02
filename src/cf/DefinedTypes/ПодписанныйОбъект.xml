@@ -89,6 +89,7 @@
 				<v8:Type>cfg:CatalogRef.СоглашенияСПоставщикамиПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogRef.СправкиСПАРКРискиПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogRef.ЗаданиеНаПеревозкуПрисоединенныеФайлы</v8:Type>
+				<v8:Type>cfg:CatalogRef.ЗаявкиНаУслугиПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogRef.ПоступлениеТоваровНаСкладПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogRef.ПередачаТоваровМеждуОрганизациямиПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogRef.АвансовыйОтчетПрисоединенныеФайлы</v8:Type>
