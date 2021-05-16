@@ -656,6 +656,7 @@
 					</Synonym>
 					<Comment>Предмет задачи</Comment>
 					<Type>
+						<v8:Type>cfg:DocumentRef.ЗаказПоставщику</v8:Type>
 						<v8:Type>cfg:CatalogRef.ДоговорыКонтрагентов</v8:Type>
 						<v8:TypeSet>cfg:DocumentRef</v8:TypeSet>
 						<v8:TypeSet>cfg:TaskRef</v8:TypeSet>

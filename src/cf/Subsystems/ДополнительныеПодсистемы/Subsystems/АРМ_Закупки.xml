@@ -48,6 +48,11 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПриобретениеУслугПрочихАктивовПрисоединенныеФайлы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПоступлениеТоваровНаСкладПрисоединенныеФайлы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЗаявкиНаУслугиПрисоединенныеФайлы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИнструкцияАРМ_Закупки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыЗаказовПоставщикам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.КоммерческийДиректор</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Task.ЗадачаИсполнителя</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">614f91f9-d3d1-43a7-9962-5cc1991a0f44</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

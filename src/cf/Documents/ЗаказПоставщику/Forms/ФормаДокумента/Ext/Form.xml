@@ -1168,6 +1168,12 @@
 												<Event name="OnChange">СкладПриИзменении</Event>
 											</Events>
 										</InputField>
+										<InputField name="КурсДоллараНаМоментОплаты" id="1217">
+											<DataPath>Объект.КурсДоллараНаМоментОплаты</DataPath>
+											<TitleLocation>Left</TitleLocation>
+											<ContextMenu name="КурсДоллараНаМоментОплатыКонтекстноеМеню" id="1218"/>
+											<ExtendedTooltip name="КурсДоллараНаМоментОплатыРасширеннаяПодсказка" id="1219"/>
+										</InputField>
 										<CheckBoxField name="ОтгрузкиОтПоставщикаЗавершены" id="1194">
 											<DataPath>Объект.ОтгрузкиОтПоставщикаЗавершены</DataPath>
 											<TitleLocation>Right</TitleLocation>
