@@ -947,7 +947,7 @@
 											<InputHint>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>РОГА И КОПЫТА ОАО</v8:content>
+													<v8:content>Агро Зерно Юг ООО</v8:content>
 												</v8:item>
 											</InputHint>
 											<ContextMenu name="Контрагент_НаименованиеКонтекстноеМеню" id="286"/>
@@ -1094,6 +1094,9 @@
 											</InputHint>
 											<ContextMenu name="Договор_ПартнерКонтекстноеМеню" id="359"/>
 											<ExtendedTooltip name="Договор_ПартнерРасширеннаяПодсказка" id="360"/>
+											<Events>
+												<Event name="OnChange">Договор_ПартнерПриИзменении</Event>
+											</Events>
 										</InputField>
 										<Button name="СоздатьПартнера1" id="361">
 											<Type>UsualButton</Type>
@@ -3164,7 +3167,6 @@
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
-			<FillCheck>ShowError</FillCheck>
 		</Attribute>
 		<Attribute name="НастройкиПодключенияКСервисуИППЗаданы" id="6">
 			<Title>
@@ -3325,7 +3327,6 @@
 			<Type>
 				<v8:Type>cfg:CatalogRef.ДоговорыКонтрагентов</v8:Type>
 			</Type>
-			<FillCheck>ShowError</FillCheck>
 		</Attribute>
 		<Attribute name="Спецификация_Номер" id="17">
 			<Title>
@@ -4378,7 +4379,6 @@
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
-			<FillCheck>ShowError</FillCheck>
 		</Attribute>
 		<Attribute name="Перевозка_АдресПоступления_СкладПоступления" id="72">
 			<Title>
@@ -4390,7 +4390,6 @@
 			<Type>
 				<v8:Type>cfg:CatalogRef.Склады</v8:Type>
 			</Type>
-			<FillCheck>ShowError</FillCheck>
 		</Attribute>
 		<Attribute name="Перевозка_ДатаПоступления" id="73">
 			<Title>
@@ -4665,7 +4664,6 @@
 			<Type>
 				<v8:TypeSet>cfg:DefinedType.ДенежнаяСуммаНеотрицательная</v8:TypeSet>
 			</Type>
-			<FillCheck>ShowError</FillCheck>
 		</Attribute>
 	</Attributes>
 	<Commands>
