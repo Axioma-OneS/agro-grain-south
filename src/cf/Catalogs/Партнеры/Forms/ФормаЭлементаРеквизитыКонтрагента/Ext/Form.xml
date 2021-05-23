@@ -1162,6 +1162,12 @@
 										<Event name="OnChange">ФлагПризнакПартнераПриИзменении</Event>
 									</Events>
 								</CheckBoxField>
+								<CheckBoxField name="ДопУслуги" id="475">
+									<DataPath>Объект.ДопУслуги</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ДопУслугиКонтекстноеМеню" id="476"/>
+									<ExtendedTooltip name="ДопУслугиРасширеннаяПодсказка" id="477"/>
+								</CheckBoxField>
 							</ChildItems>
 						</UsualGroup>
 						<CheckBoxField name="НДСПоСтавкам4и2" id="216">
