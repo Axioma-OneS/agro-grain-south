@@ -3706,6 +3706,9 @@
 				<KeyField>КатегорияКонтрагентов</KeyField>
 				<KeyField>Наименование</KeyField>
 				<KeyField>Код</KeyField>
+				<KeyField>Почта</KeyField>
+				<KeyField>НомерТелефона</KeyField>
+				<KeyField>ЮридическийАдрес</KeyField>
 				<AutoSaveUserSettings>false</AutoSaveUserSettings>
 				<ListSettings>
 					<dcsset:filter>
