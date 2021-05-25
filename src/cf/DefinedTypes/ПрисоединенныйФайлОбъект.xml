@@ -50,7 +50,7 @@
 				<v8:Type>cfg:CatalogObject.ВидыСделокСКлиентамиПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogObject.ВстречаПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogObject.ЭДПрисоединенныеФайлы</v8:Type>
-				<v8:Type>cfg:CatalogObject.ЗаявкиНаУслугиПрисоединенныеФайлы</v8:Type>
+				<v8:Type>cfg:CatalogObject.ЗаявкаНаУслугиПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogObject.ВыкупВозвратнойТарыУПоставщикаПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogObject.НоменклатураПоставщиковПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogObject.ПоступлениеТоваровНаСкладПрисоединенныеФайлы</v8:Type>

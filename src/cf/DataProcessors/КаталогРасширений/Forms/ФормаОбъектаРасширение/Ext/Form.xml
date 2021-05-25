@@ -2618,6 +2618,18 @@
 				<d4p1:multiStageLinkColor>#000000</d4p1:multiStageLinkColor>
 				<d4p1:valuesAxis/>
 				<d4p1:pointsAxis/>
+				<d4p1:valuesScale>
+					<d4p1:titleArea>
+						<d4p1:font kind="AutoFont"/>
+						<d4p1:textColor>auto</d4p1:textColor>
+						<d4p1:backColor>auto</d4p1:backColor>
+						<d4p1:border width="1">
+							<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+						</d4p1:border>
+						<d4p1:borderColor>auto</d4p1:borderColor>
+					</d4p1:titleArea>
+					<d4p1:gridLinesShowMode>Show</d4p1:gridLinesShowMode>
+				</d4p1:valuesScale>
 				<d4p1:seriesScale>
 					<d4p1:showTitle>DontShow</d4p1:showTitle>
 					<d4p1:titleArea>
