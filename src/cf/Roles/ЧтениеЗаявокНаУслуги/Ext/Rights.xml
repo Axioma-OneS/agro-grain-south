@@ -15,7 +15,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.ЗаявкиНаУслугиПрисоединенныеФайлы</name>
+		<name>Catalog.ЗаявкаНаУслугиПрисоединенныеФайлы</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>

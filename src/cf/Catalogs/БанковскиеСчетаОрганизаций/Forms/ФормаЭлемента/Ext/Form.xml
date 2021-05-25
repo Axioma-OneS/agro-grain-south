@@ -1076,8 +1076,8 @@
 													<Title formatted="true">
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>&lt;fontsize 15&gt;&lt;b&gt;1С:ДиректБанк&lt;/&gt;&lt;/&gt;
-&lt;b&gt;&lt;link http://directbank.1c.ru&gt;Подробнее&lt;/&gt;&lt;/&gt;&lt;fontsize 12&gt;&lt;b&gt;&lt;link http://directbank.1c.ru&gt; &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;b&gt;&lt;link http://directbank.1c.ru&gt;о сервисе&lt;/&gt;&lt;/&gt;</v8:content>
+															<v8:content>&lt;b&gt;&lt;fontsize 15&gt;1С:ДиректБанк&lt;/&gt;&lt;/&gt;
+&lt;link http://directbank.1c.ru&gt;&lt;b&gt;Подробнее&lt;/&gt;&lt;/&gt;&lt;link http://directbank.1c.ru&gt;&lt;b&gt;&lt;fontsize 12&gt; &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;link http://directbank.1c.ru&gt;&lt;b&gt;о сервисе&lt;/&gt;&lt;/&gt;</v8:content>
 														</v8:item>
 													</Title>
 													<GroupVerticalAlign>Top</GroupVerticalAlign>

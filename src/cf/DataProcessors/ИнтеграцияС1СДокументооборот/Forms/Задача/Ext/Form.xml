@@ -606,7 +606,7 @@
 																				<v8:item>
 																					<v8:lang>ru</v8:lang>
 																					<v8:content>У задачи нет предметов.
-&lt;u&gt;&lt;color LightGray&gt;&lt;link ДобавитьПредмет&gt;Добавить…&lt;/&gt;&lt;/&gt;&lt;/&gt;</v8:content>
+&lt;link ДобавитьПредмет&gt;&lt;u&gt;&lt;color LightGray&gt;Добавить…&lt;/&gt;&lt;/&gt;&lt;/&gt;</v8:content>
 																				</v8:item>
 																			</Title>
 																			<HorizontalAlign>Center</HorizontalAlign>

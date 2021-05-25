@@ -47,7 +47,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЗаданиеНаПеревозкуПрисоединенныеФайлы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПриобретениеУслугПрочихАктивовПрисоединенныеФайлы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПоступлениеТоваровНаСкладПрисоединенныеФайлы</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЗаявкиНаУслугиПрисоединенныеФайлы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЗаявкаНаУслугиПрисоединенныеФайлы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИнструкцияАРМ_Закупки</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыЗаказовПоставщикам</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.КоммерческийДиректор</xr:Item>
