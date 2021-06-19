@@ -964,7 +964,7 @@
 													<Title formatted="true">
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Для серий, идентифицирующих экземпляры товаров, возможно &lt;b&gt;&lt;colorstyle -16&gt;только&lt;/&gt;&lt;/&gt;&lt;b&gt; &lt;/&gt;справочное указание.</v8:content>
+															<v8:content>Для серий, идентифицирующих экземпляры товаров, возможно &lt;b&gt;&lt;colorstyle -16&gt;только&lt;/&gt;&lt;/&gt;&lt;b&gt;&lt;color 0:b9627855-6773-4a59-b7d3-f9e2e565cd9e&gt; &lt;/&gt;&lt;/&gt;справочное указание.</v8:content>
 														</v8:item>
 													</Title>
 													<ContextMenu name="НадписьДляЭкземпляраТолькоСправочноеУказаниеКонтекстноеМеню" id="492"/>

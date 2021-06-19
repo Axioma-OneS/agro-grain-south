@@ -904,6 +904,9 @@
 											</InputHint>
 											<ContextMenu name="Контрагент_ИННКонтекстноеМеню" id="262"/>
 											<ExtendedTooltip name="Контрагент_ИННРасширеннаяПодсказка" id="263"/>
+											<Events>
+												<Event name="OnChange">Контрагент_ИННПриИзменении</Event>
+											</Events>
 										</InputField>
 										<Button name="ЗаполнитьПоИНН" id="259">
 											<Type>UsualButton</Type>
@@ -941,6 +944,9 @@
 											</InputHint>
 											<ContextMenu name="Контрагент_ВидКонтрагентаКонтекстноеМеню" id="283"/>
 											<ExtendedTooltip name="Контрагент_ВидКонтрагентаРасширеннаяПодсказка" id="284"/>
+											<Events>
+												<Event name="OnChange">Контрагент_ВидКонтрагентаПриИзменении</Event>
+											</Events>
 										</InputField>
 										<InputField name="Контрагент_Наименование" id="285">
 											<DataPath>Контрагент_Наименование</DataPath>
@@ -952,6 +958,9 @@
 											</InputHint>
 											<ContextMenu name="Контрагент_НаименованиеКонтекстноеМеню" id="286"/>
 											<ExtendedTooltip name="Контрагент_НаименованиеРасширеннаяПодсказка" id="287"/>
+											<Events>
+												<Event name="OnChange">Контрагент_НаименованиеПриИзменении</Event>
+											</Events>
 										</InputField>
 										<InputField name="Контрагент_ЮридическийАдрес" id="288">
 											<DataPath>Контрагент_ЮридическийАдрес</DataPath>
@@ -967,6 +976,7 @@
 											<ContextMenu name="Контрагент_ЮридическийАдресКонтекстноеМеню" id="289"/>
 											<ExtendedTooltip name="Контрагент_ЮридическийАдресРасширеннаяПодсказка" id="290"/>
 											<Events>
+												<Event name="OnChange">Контрагент_ЮридическийАдресПриИзменении</Event>
 												<Event name="StartChoice">Контрагент_ЮридическийАдресНачалоВыбора</Event>
 											</Events>
 										</InputField>
@@ -993,6 +1003,9 @@
 											<DataPath>Контрагент_ЭлектроннаяПочта</DataPath>
 											<ContextMenu name="Контрагент_ЭлектроннаяПочтаКонтекстноеМеню" id="302"/>
 											<ExtendedTooltip name="Контрагент_ЭлектроннаяПочтаРасширеннаяПодсказка" id="303"/>
+											<Events>
+												<Event name="OnChange">Контрагент_ЭлектроннаяПочтаПриИзменении</Event>
+											</Events>
 										</InputField>
 										<InputField name="Контрагент_Телефон" id="293">
 											<DataPath>Контрагент_Телефон</DataPath>
@@ -1007,6 +1020,7 @@
 											<ContextMenu name="Контрагент_ТелефонКонтекстноеМеню" id="294"/>
 											<ExtendedTooltip name="Контрагент_ТелефонРасширеннаяПодсказка" id="295"/>
 											<Events>
+												<Event name="OnChange">Контрагент_ТелефонПриИзменении</Event>
 												<Event name="StartChoice">Контрагент_ТелефонНачалоВыбора</Event>
 											</Events>
 										</InputField>
@@ -1017,6 +1031,7 @@
 											<ContextMenu name="Контрагент_ПочтовыйАдресКонтекстноеМеню" id="305"/>
 											<ExtendedTooltip name="Контрагент_ПочтовыйАдресРасширеннаяПодсказка" id="306"/>
 											<Events>
+												<Event name="OnChange">Контрагент_ПочтовыйАдресПриИзменении</Event>
 												<Event name="StartChoice">Контрагент_ПочтовыйАдресНачалоВыбора</Event>
 											</Events>
 										</InputField>
@@ -1045,6 +1060,9 @@
 											<MultiLine>true</MultiLine>
 											<ContextMenu name="Контрагент_КомментарийКонтекстноеМеню" id="299"/>
 											<ExtendedTooltip name="Контрагент_КомментарийРасширеннаяПодсказка" id="300"/>
+											<Events>
+												<Event name="OnChange">Контрагент_КомментарийПриИзменении</Event>
+											</Events>
 										</InputField>
 									</ChildItems>
 								</UsualGroup>
@@ -1197,11 +1215,17 @@
 											<DataPath>Договор_Номер</DataPath>
 											<ContextMenu name="Договор_НомерКонтекстноеМеню" id="380"/>
 											<ExtendedTooltip name="Договор_НомерРасширеннаяПодсказка" id="381"/>
+											<Events>
+												<Event name="OnChange">Договор_НомерПриИзменении</Event>
+											</Events>
 										</InputField>
 										<InputField name="Договор_ДатаЗаключения" id="382">
 											<DataPath>Договор_ДатаЗаключения</DataPath>
 											<ContextMenu name="Договор_ДатаЗаключенияКонтекстноеМеню" id="383"/>
 											<ExtendedTooltip name="Договор_ДатаЗаключенияРасширеннаяПодсказка" id="384"/>
+											<Events>
+												<Event name="OnChange">Договор_ДатаЗаключенияПриИзменении</Event>
+											</Events>
 										</InputField>
 									</ChildItems>
 								</UsualGroup>
@@ -1238,11 +1262,17 @@
 											<DataPath>Договор_ДействуетС</DataPath>
 											<ContextMenu name="Договор_ДействуетСКонтекстноеМеню" id="386"/>
 											<ExtendedTooltip name="Договор_ДействуетСРасширеннаяПодсказка" id="387"/>
+											<Events>
+												<Event name="OnChange">Договор_ДействуетСПриИзменении</Event>
+											</Events>
 										</InputField>
 										<InputField name="Договор_ДействуетПо" id="388">
 											<DataPath>Договор_ДействуетПо</DataPath>
 											<ContextMenu name="Договор_ДействуетПоКонтекстноеМеню" id="389"/>
 											<ExtendedTooltip name="Договор_ДействуетПоРасширеннаяПодсказка" id="390"/>
+											<Events>
+												<Event name="OnChange">Договор_ДействуетПоПриИзменении</Event>
+											</Events>
 										</InputField>
 										<UsualGroup name="ГруппаДоговорОкончаниеДогвоора" id="418">
 											<Title>
@@ -1267,6 +1297,9 @@
 													<CheckBoxType>Auto</CheckBoxType>
 													<ContextMenu name="Договор_ДоПолногоИсполненияКонтекстноеМеню" id="400"/>
 													<ExtendedTooltip name="Договор_ДоПолногоИсполненияРасширеннаяПодсказка" id="401"/>
+													<Events>
+														<Event name="OnChange">Договор_ДоПолногоИсполненияПриИзменении</Event>
+													</Events>
 												</CheckBoxField>
 												<CheckBoxField name="Договор_Бессрочный" id="396">
 													<DataPath>Договор_Бессрочный</DataPath>
@@ -1314,6 +1347,9 @@
 											<MultiLine>true</MultiLine>
 											<ContextMenu name="КомментарийКонтекстноеМеню" id="423"/>
 											<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="424"/>
+											<Events>
+												<Event name="OnChange">КомментарийПриИзменении</Event>
+											</Events>
 										</InputField>
 									</ChildItems>
 								</UsualGroup>
@@ -1468,6 +1504,12 @@
 																<Value xsi:type="xs:boolean">false</Value>
 															</app:value>
 														</app:item>
+														<app:item name="Отбор.Поставщик">
+															<app:value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation/>
+																<Value xsi:type="xs:boolean">true</Value>
+															</app:value>
+														</app:item>
 													</ChoiceParameters>
 													<InputHint>
 														<v8:item>
@@ -1477,6 +1519,9 @@
 													</InputHint>
 													<ContextMenu name="ДоговорКонтекстноеМеню" id="74"/>
 													<ExtendedTooltip name="ДоговорРасширеннаяПодсказка" id="75"/>
+													<Events>
+														<Event name="OnChange">ДоговорПриИзменении</Event>
+													</Events>
 												</InputField>
 												<Button name="СоздатьДоговор" id="179">
 													<Type>UsualButton</Type>
@@ -1490,23 +1535,35 @@
 											<TitleHeight>2</TitleHeight>
 											<ContextMenu name="СпецификацияНомерКонтекстноеМеню" id="79"/>
 											<ExtendedTooltip name="СпецификацияНомерРасширеннаяПодсказка" id="80"/>
+											<Events>
+												<Event name="OnChange">СпецификацияНомерПриИзменении</Event>
+											</Events>
 										</InputField>
 										<InputField name="ДатаЗаключения" id="81">
 											<DataPath>Спецификация_ДатаЗаключения</DataPath>
 											<TitleHeight>2</TitleHeight>
 											<ContextMenu name="ДатаЗаключенияКонтекстноеМеню" id="82"/>
 											<ExtendedTooltip name="ДатаЗаключенияРасширеннаяПодсказка" id="83"/>
+											<Events>
+												<Event name="OnChange">ДатаЗаключенияПриИзменении</Event>
+											</Events>
 										</InputField>
 										<InputField name="ДатаОкончанияСпецификации" id="84">
 											<DataPath>Спецификация_ДатаОкончанияСпецификации</DataPath>
 											<TitleHeight>3</TitleHeight>
 											<ContextMenu name="ДатаОкончанияСпецификацииКонтекстноеМеню" id="85"/>
 											<ExtendedTooltip name="ДатаОкончанияСпецификацииРасширеннаяПодсказка" id="86"/>
+											<Events>
+												<Event name="OnChange">ДатаОкончанияСпецификацииПриИзменении</Event>
+											</Events>
 										</InputField>
 										<InputField name="Спецификация_КурсДоллараНаМоментОплаты" id="734">
 											<DataPath>Спецификация_КурсДоллараНаМоментОплаты</DataPath>
 											<ContextMenu name="Спецификация_КурсДоллараНаМоментОплатыКонтекстноеМеню" id="735"/>
 											<ExtendedTooltip name="Спецификация_КурсДоллараНаМоментОплатыРасширеннаяПодсказка" id="736"/>
+											<Events>
+												<Event name="OnChange">Спецификация_КурсДоллараНаМоментОплатыПриИзменении</Event>
+											</Events>
 										</InputField>
 									</ChildItems>
 								</UsualGroup>
@@ -1582,6 +1639,9 @@
 											</InputHint>
 											<ContextMenu name="ТипПеревозкиКонтекстноеМеню" id="93"/>
 											<ExtendedTooltip name="ТипПеревозкиРасширеннаяПодсказка" id="94"/>
+											<Events>
+												<Event name="OnChange">ТипПеревозкиПриИзменении</Event>
+											</Events>
 										</InputField>
 									</ChildItems>
 								</UsualGroup>
@@ -1614,6 +1674,7 @@
 											<ContextMenu name="ГородКонтекстноеМеню" id="98"/>
 											<ExtendedTooltip name="ГородРасширеннаяПодсказка" id="99"/>
 											<Events>
+												<Event name="OnChange">ГородПриИзменении</Event>
 												<Event name="AutoComplete">ГородАвтоПодбор</Event>
 												<Event name="ChoiceProcessing">ГородОбработкаВыбора</Event>
 											</Events>
@@ -1632,6 +1693,7 @@
 											<ContextMenu name="СкладГрузополучателяКонтекстноеМеню" id="206"/>
 											<ExtendedTooltip name="СкладГрузополучателяРасширеннаяПодсказка" id="207"/>
 											<Events>
+												<Event name="OnChange">СкладГрузополучателяПриИзменении</Event>
 												<Event name="StartChoice">СкладГрузополучателяНачалоВыбора</Event>
 											</Events>
 										</InputField>
@@ -1667,6 +1729,7 @@
 											<ContextMenu name="ВидПродукцииКонтекстноеМеню" id="106"/>
 											<ExtendedTooltip name="ВидПродукцииРасширеннаяПодсказка" id="107"/>
 											<Events>
+												<Event name="OnChange">ВидПродукцииПриИзменении</Event>
 												<Event name="ChoiceProcessing">ВидПродукцииОбработкаВыбора</Event>
 											</Events>
 										</InputField>
@@ -1743,6 +1806,9 @@
 													<TitleHeight>2</TitleHeight>
 													<ContextMenu name="СуммаКонтекстноеМеню" id="118"/>
 													<ExtendedTooltip name="СуммаРасширеннаяПодсказка" id="119"/>
+													<Events>
+														<Event name="OnChange">СуммаПриИзменении</Event>
+													</Events>
 												</InputField>
 												<LabelDecoration name="ДекорацияСуммаРуб" id="236">
 													<Title formatted="false">
@@ -1819,6 +1885,9 @@
 											<TitleHeight>1</TitleHeight>
 											<ContextMenu name="СуммаНДСКонтекстноеМеню" id="124"/>
 											<ExtendedTooltip name="СуммаНДСРасширеннаяПодсказка" id="125"/>
+											<Events>
+												<Event name="OnChange">СуммаНДСПриИзменении</Event>
+											</Events>
 										</InputField>
 									</ChildItems>
 								</UsualGroup>
@@ -1948,6 +2017,9 @@
 											<MultiLine>true</MultiLine>
 											<ContextMenu name="Спецификация_КомментарийКонтекстноеМеню" id="132"/>
 											<ExtendedTooltip name="Спецификация_КомментарийРасширеннаяПодсказка" id="133"/>
+											<Events>
+												<Event name="OnChange">Спецификация_КомментарийПриИзменении</Event>
+											</Events>
 										</InputField>
 									</ChildItems>
 								</UsualGroup>
@@ -1972,6 +2044,9 @@
 									<DataPath>Перевозка_СтатусДоставки</DataPath>
 									<ContextMenu name="Перевозка_СтатусДоставкиКонтекстноеМеню" id="468"/>
 									<ExtendedTooltip name="Перевозка_СтатусДоставкиРасширеннаяПодсказка" id="469"/>
+									<Events>
+										<Event name="OnChange">Перевозка_СтатусДоставкиПриИзменении</Event>
+									</Events>
 								</InputField>
 								<UsualGroup name="ГруппаПеревозкаСпецификация" id="473">
 									<Title>
@@ -2051,6 +2126,9 @@
 											</InputHint>
 											<ContextMenu name="Перевозка_ПоставщикТовараКонтекстноеМеню" id="478"/>
 											<ExtendedTooltip name="Перевозка_ПоставщикТовараРасширеннаяПодсказка" id="479"/>
+											<Events>
+												<Event name="OnChange">Перевозка_ПоставщикТовараПриИзменении</Event>
+											</Events>
 										</InputField>
 										<Button name="СоздатьПартнера2" id="482">
 											<Type>UsualButton</Type>
@@ -2117,6 +2195,9 @@
 									</InputHint>
 									<ContextMenu name="Перевозка_НомерТТН_ЖДНКонтекстноеМеню" id="488"/>
 									<ExtendedTooltip name="Перевозка_НомерТТН_ЖДНРасширеннаяПодсказка" id="489"/>
+									<Events>
+										<Event name="OnChange">Перевозка_НомерТТН_ЖДНПриИзменении</Event>
+									</Events>
 								</InputField>
 								<UsualGroup name="ГруппаПеревозкаEXW_CPT" id="584">
 									<Title>
@@ -2158,24 +2239,36 @@
 													<AutoMarkIncomplete>true</AutoMarkIncomplete>
 													<ContextMenu name="Перевозка_ДатаОтгрузкиКонтекстноеМеню" id="495"/>
 													<ExtendedTooltip name="Перевозка_ДатаОтгрузкиРасширеннаяПодсказка" id="496"/>
+													<Events>
+														<Event name="OnChange">Перевозка_ДатаОтгрузкиПриИзменении</Event>
+													</Events>
 												</InputField>
 												<InputField name="Перевозка_ТранспортноеСредство_ТипТранспорта" id="618">
 													<DataPath>Перевозка_ТранспортноеСредство_ТипТранспорта</DataPath>
 													<AutoMarkIncomplete>true</AutoMarkIncomplete>
 													<ContextMenu name="Перевозка_ТранспортноеСредство_ТипТранспортаКонтекстноеМеню" id="619"/>
 													<ExtendedTooltip name="Перевозка_ТранспортноеСредство_ТипТранспортаРасширеннаяПодсказка" id="620"/>
+													<Events>
+														<Event name="OnChange">Перевозка_ТранспортноеСредство_ТипТранспортаПриИзменении</Event>
+													</Events>
 												</InputField>
 												<InputField name="Перевозка_ТранспортноеСредство_НомерТранспортногоСредства" id="615">
 													<DataPath>Перевозка_ТранспортноеСредство_НомерТранспортногоСредства</DataPath>
 													<AutoMarkIncomplete>true</AutoMarkIncomplete>
 													<ContextMenu name="Перевозка_ТранспортноеСредство_НомерТранспортногоСредстваКонтекстноеМеню" id="616"/>
 													<ExtendedTooltip name="Перевозка_ТранспортноеСредство_НомерТранспортногоСредстваРасширеннаяПодсказка" id="617"/>
+													<Events>
+														<Event name="OnChange">Перевозка_ТранспортноеСредство_НомерТранспортногоСредстваПриИзменении</Event>
+													</Events>
 												</InputField>
 												<InputField name="Перевозка_Перевозчик" id="503">
 													<DataPath>Перевозка_Перевозчик</DataPath>
 													<AutoMarkIncomplete>true</AutoMarkIncomplete>
 													<ContextMenu name="Перевозка_ПеревозчикКонтекстноеМеню" id="504"/>
 													<ExtendedTooltip name="Перевозка_ПеревозчикРасширеннаяПодсказка" id="505"/>
+													<Events>
+														<Event name="OnChange">Перевозка_ПеревозчикПриИзменении</Event>
+													</Events>
 												</InputField>
 												<InputField name="Перевозка_ДоговорСПеревозчиком" id="506">
 													<DataPath>Перевозка_ДоговорСПеревозчиком</DataPath>
@@ -2189,6 +2282,9 @@
 													</ChoiceParameterLinks>
 													<ContextMenu name="Перевозка_ДоговорСПеревозчикомКонтекстноеМеню" id="507"/>
 													<ExtendedTooltip name="Перевозка_ДоговорСПеревозчикомРасширеннаяПодсказка" id="508"/>
+													<Events>
+														<Event name="OnChange">Перевозка_ДоговорСПеревозчикомПриИзменении</Event>
+													</Events>
 												</InputField>
 												<UsualGroup name="ГруппаВодитель" id="515">
 													<Title>
@@ -2221,6 +2317,9 @@
 															<AutoMarkIncomplete>true</AutoMarkIncomplete>
 															<ContextMenu name="Перевозка_ВодительНомерТелефонаКонтекстноеМеню" id="513"/>
 															<ExtendedTooltip name="Перевозка_ВодительНомерТелефонаРасширеннаяПодсказка" id="514"/>
+															<Events>
+																<Event name="OnChange">Перевозка_ВодительНомерТелефонаПриИзменении</Event>
+															</Events>
 														</InputField>
 													</ChildItems>
 												</UsualGroup>
@@ -2253,6 +2352,7 @@
 															<ContextMenu name="Перевозка_АдресНаправления_ГородКонтекстноеМеню" id="523"/>
 															<ExtendedTooltip name="Перевозка_АдресНаправления_ГородРасширеннаяПодсказка" id="524"/>
 															<Events>
+																<Event name="OnChange">Перевозка_АдресНаправления_ГородПриИзменении</Event>
 																<Event name="AutoComplete">Перевозка_АдресНаправления_ГородАвтоПодбор</Event>
 																<Event name="ChoiceProcessing">Перевозка_АдресНаправления_ГородОбработкаВыбора</Event>
 															</Events>
@@ -2271,6 +2371,7 @@
 															<ContextMenu name="Перевозка_АдресНаправления_СкладНазначенияКонтекстноеМеню" id="526"/>
 															<ExtendedTooltip name="Перевозка_АдресНаправления_СкладНазначенияРасширеннаяПодсказка" id="527"/>
 															<Events>
+																<Event name="OnChange">Перевозка_АдресНаправления_СкладНазначенияПриИзменении</Event>
 																<Event name="StartChoice">Перевозка_АдресНаправления_СкладНазначенияНачалоВыбора</Event>
 															</Events>
 														</InputField>
@@ -2298,6 +2399,9 @@
 															<AutoMarkIncomplete>true</AutoMarkIncomplete>
 															<ContextMenu name="Перевозка_ФактическийОбъемОтгрузкиКонтекстноеМеню" id="531"/>
 															<ExtendedTooltip name="Перевозка_ФактическийОбъемОтгрузкиРасширеннаяПодсказка" id="532"/>
+															<Events>
+																<Event name="OnChange">Перевозка_ФактическийОбъемОтгрузкиПриИзменении</Event>
+															</Events>
 														</InputField>
 														<InputField name="Перевозка_ЦенаПеревозкиНаТоннуС_НДС" id="533">
 															<DataPath>Перевозка_ЦенаПеревозкиНаТоннуС_НДС</DataPath>
@@ -2364,6 +2468,9 @@
 															<AutoMarkIncomplete>true</AutoMarkIncomplete>
 															<ContextMenu name="Перевозка_ЦенаПеревозкиНаТоннуБезНДСКонтекстноеМеню" id="548"/>
 															<ExtendedTooltip name="Перевозка_ЦенаПеревозкиНаТоннуБезНДСРасширеннаяПодсказка" id="549"/>
+															<Events>
+																<Event name="OnChange">Перевозка_ЦенаПеревозкиНаТоннуБезНДСПриИзменении</Event>
+															</Events>
 														</InputField>
 													</ChildItems>
 												</UsualGroup>
@@ -2398,12 +2505,18 @@
 															<AutoMarkIncomplete>true</AutoMarkIncomplete>
 															<ContextMenu name="Перевозка_ОбъемПоступленияКонтекстноеМеню" id="556"/>
 															<ExtendedTooltip name="Перевозка_ОбъемПоступленияРасширеннаяПодсказка" id="557"/>
+															<Events>
+																<Event name="OnChange">Перевозка_ОбъемПоступленияПриИзменении</Event>
+															</Events>
 														</InputField>
 														<InputField name="Перевозка_ПотериНаПеревозке" id="558">
 															<DataPath>Перевозка_ПотериНаПеревозке</DataPath>
 															<AutoMarkIncomplete>true</AutoMarkIncomplete>
 															<ContextMenu name="Перевозка_ПотериНаПеревозкеКонтекстноеМеню" id="559"/>
 															<ExtendedTooltip name="Перевозка_ПотериНаПеревозкеРасширеннаяПодсказка" id="560"/>
+															<Events>
+																<Event name="OnChange">Перевозка_ПотериНаПеревозкеПриИзменении</Event>
+															</Events>
 														</InputField>
 													</ChildItems>
 												</UsualGroup>
@@ -2436,6 +2549,7 @@
 															<ContextMenu name="Перевозка_АдресПоступления_ГородКонтекстноеМеню" id="564"/>
 															<ExtendedTooltip name="Перевозка_АдресПоступления_ГородРасширеннаяПодсказка" id="565"/>
 															<Events>
+																<Event name="OnChange">Перевозка_АдресПоступления_ГородПриИзменении</Event>
 																<Event name="AutoComplete">Перевозка_АдресПоступления_ГородАвтоПодбор</Event>
 																<Event name="ChoiceProcessing">Перевозка_АдресПоступления_ГородОбработкаВыбора</Event>
 															</Events>
@@ -2454,6 +2568,7 @@
 															<ContextMenu name="Перевозка_АдресПоступления_СкладПоступленияКонтекстноеМеню" id="567"/>
 															<ExtendedTooltip name="Перевозка_АдресПоступления_СкладПоступленияРасширеннаяПодсказка" id="568"/>
 															<Events>
+																<Event name="OnChange">Перевозка_АдресПоступления_СкладПоступленияПриИзменении</Event>
 																<Event name="StartChoice">Перевозка_АдресПоступления_СкладПоступленияНачалоВыбора</Event>
 															</Events>
 														</InputField>
@@ -2462,6 +2577,9 @@
 															<AutoMarkIncomplete>true</AutoMarkIncomplete>
 															<ContextMenu name="Перевозка_ДатаПоступленияКонтекстноеМеню" id="570"/>
 															<ExtendedTooltip name="Перевозка_ДатаПоступленияРасширеннаяПодсказка" id="571"/>
+															<Events>
+																<Event name="OnChange">Перевозка_ДатаПоступленияПриИзменении</Event>
+															</Events>
 														</InputField>
 													</ChildItems>
 												</UsualGroup>
@@ -2489,6 +2607,9 @@
 													<AutoMarkIncomplete>true</AutoMarkIncomplete>
 													<ContextMenu name="Перевозка_ОбъемПоступления1КонтекстноеМеню" id="573"/>
 													<ExtendedTooltip name="Перевозка_ОбъемПоступления1РасширеннаяПодсказка" id="574"/>
+													<Events>
+														<Event name="OnChange">Перевозка_ОбъемПоступления1ПриИзменении</Event>
+													</Events>
 												</InputField>
 												<InputField name="Перевозка_АдресПоступления_Город1" id="575">
 													<DataPath>Перевозка_АдресПоступления_Город</DataPath>
@@ -2502,6 +2623,7 @@
 													<ContextMenu name="Перевозка_АдресПоступления_Город1КонтекстноеМеню" id="576"/>
 													<ExtendedTooltip name="Перевозка_АдресПоступления_Город1РасширеннаяПодсказка" id="577"/>
 													<Events>
+														<Event name="OnChange">Перевозка_АдресПоступления_Город1ПриИзменении</Event>
 														<Event name="AutoComplete">Перевозка_АдресПоступления_Город1АвтоПодбор</Event>
 														<Event name="ChoiceProcessing">Перевозка_АдресПоступления_Город1ОбработкаВыбора</Event>
 													</Events>
@@ -2520,6 +2642,7 @@
 													<ContextMenu name="Перевозка_АдресПоступления_СкладПоступления1КонтекстноеМеню" id="579"/>
 													<ExtendedTooltip name="Перевозка_АдресПоступления_СкладПоступления1РасширеннаяПодсказка" id="580"/>
 													<Events>
+														<Event name="OnChange">Перевозка_АдресПоступления_СкладПоступления1ПриИзменении</Event>
 														<Event name="StartChoice">Перевозка_АдресПоступления_СкладПоступления1НачалоВыбора</Event>
 													</Events>
 												</InputField>
@@ -2528,6 +2651,9 @@
 													<AutoMarkIncomplete>true</AutoMarkIncomplete>
 													<ContextMenu name="Перевозка_ДатаПоступления1КонтекстноеМеню" id="582"/>
 													<ExtendedTooltip name="Перевозка_ДатаПоступления1РасширеннаяПодсказка" id="583"/>
+													<Events>
+														<Event name="OnChange">Перевозка_ДатаПоступления1ПриИзменении</Event>
+													</Events>
 												</InputField>
 											</ChildItems>
 										</UsualGroup>
@@ -2659,6 +2785,9 @@
 											<MultiLine>true</MultiLine>
 											<ContextMenu name="Перевозка_КомментарийКонтекстноеМеню" id="613"/>
 											<ExtendedTooltip name="Перевозка_КомментарийРасширеннаяПодсказка" id="614"/>
+											<Events>
+												<Event name="OnChange">Перевозка_КомментарийПриИзменении</Event>
+											</Events>
 										</InputField>
 									</ChildItems>
 								</UsualGroup>
@@ -2683,6 +2812,9 @@
 									<DataPath>ДопУслуги_ОписаниеУслуги</DataPath>
 									<ContextMenu name="ДопУслуги_ОписаниеУслугиКонтекстноеМеню" id="625"/>
 									<ExtendedTooltip name="ДопУслуги_ОписаниеУслугиРасширеннаяПодсказка" id="626"/>
+									<Events>
+										<Event name="OnChange">ДопУслуги_ОписаниеУслугиПриИзменении</Event>
+									</Events>
 								</InputField>
 								<UsualGroup name="ГруппаДопУслугиПартнер" id="633">
 									<Title>
@@ -2714,6 +2846,9 @@
 											</ChoiceParameters>
 											<ContextMenu name="ДопУслуги_ПартнерКонтекстноеМеню" id="628"/>
 											<ExtendedTooltip name="ДопУслуги_ПартнерРасширеннаяПодсказка" id="629"/>
+											<Events>
+												<Event name="OnChange">ДопУслуги_ПартнерПриИзменении</Event>
+											</Events>
 										</InputField>
 										<Button name="СоздатьПартнера3" id="637">
 											<Type>UsualButton</Type>
@@ -2751,6 +2886,9 @@
 											</ChoiceParameterLinks>
 											<ContextMenu name="ДопУслуги_ДоговорКонтекстноеМеню" id="631"/>
 											<ExtendedTooltip name="ДопУслуги_ДоговорРасширеннаяПодсказка" id="632"/>
+											<Events>
+												<Event name="OnChange">ДопУслуги_ДоговорПриИзменении</Event>
+											</Events>
 										</InputField>
 										<Button name="СоздатьДоговор1" id="639">
 											<Type>UsualButton</Type>
@@ -2763,16 +2901,25 @@
 									<DataPath>ДопУслуги_НомерЗаявкиСпецификации</DataPath>
 									<ContextMenu name="ДопУслуги_НомерЗаявкиСпецификацииКонтекстноеМеню" id="642"/>
 									<ExtendedTooltip name="ДопУслуги_НомерЗаявкиСпецификацииРасширеннаяПодсказка" id="643"/>
+									<Events>
+										<Event name="OnChange">ДопУслуги_НомерЗаявкиСпецификацииПриИзменении</Event>
+									</Events>
 								</InputField>
 								<InputField name="ДопУслуги_ДатаЗаключения" id="644">
 									<DataPath>ДопУслуги_ДатаЗаключения</DataPath>
 									<ContextMenu name="ДопУслуги_ДатаЗаключенияКонтекстноеМеню" id="645"/>
 									<ExtendedTooltip name="ДопУслуги_ДатаЗаключенияРасширеннаяПодсказка" id="646"/>
+									<Events>
+										<Event name="OnChange">ДопУслуги_ДатаЗаключенияПриИзменении</Event>
+									</Events>
 								</InputField>
 								<InputField name="ДопУслуги_ДатаИсполнения" id="696">
 									<DataPath>ДопУслуги_ДатаИсполнения</DataPath>
 									<ContextMenu name="ДопУслуги_ДатаИсполненияКонтекстноеМеню" id="697"/>
 									<ExtendedTooltip name="ДопУслуги_ДатаИсполненияРасширеннаяПодсказка" id="698"/>
+									<Events>
+										<Event name="OnChange">ДопУслуги_ДатаИсполненияПриИзменении</Event>
+									</Events>
 								</InputField>
 								<UsualGroup name="ГруппаДопУслугиУсловияЗаказаУслуги" id="665">
 									<Title>
@@ -2812,6 +2959,9 @@
 											<ReadOnly>true</ReadOnly>
 											<ContextMenu name="ДопУслуги_СуммаНДСКонтекстноеМеню" id="657"/>
 											<ExtendedTooltip name="ДопУслуги_СуммаНДСРасширеннаяПодсказка" id="658"/>
+											<Events>
+												<Event name="OnChange">ДопУслуги_СуммаНДСПриИзменении</Event>
+											</Events>
 										</InputField>
 									</ChildItems>
 								</UsualGroup>
@@ -2820,6 +2970,9 @@
 									<ChoiceForm>Document.ЗаказПоставщику.Form.ФормаВыбораАРМЗакупки_ДопУслуги</ChoiceForm>
 									<ContextMenu name="ДопУслуги_РаспоряжениеКонтекстноеМеню" id="663"/>
 									<ExtendedTooltip name="ДопУслуги_РаспоряжениеРасширеннаяПодсказка" id="664"/>
+									<Events>
+										<Event name="OnChange">ДопУслуги_РаспоряжениеПриИзменении</Event>
+									</Events>
 								</InputField>
 								<UsualGroup name="ГруппаДопУслугиПрочее" id="667">
 									<Title>
@@ -2947,6 +3100,9 @@
 											<MultiLine>true</MultiLine>
 											<ContextMenu name="ДопУслугиКомментарийКонтекстноеМеню" id="694"/>
 											<ExtendedTooltip name="ДопУслугиКомментарийРасширеннаяПодсказка" id="695"/>
+											<Events>
+												<Event name="OnChange">ДопУслугиКомментарийПриИзменении</Event>
+											</Events>
 										</InputField>
 									</ChildItems>
 								</UsualGroup>

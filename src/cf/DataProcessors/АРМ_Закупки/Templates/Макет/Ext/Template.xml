@@ -209,6 +209,7 @@
 				<c>
 					<f>12</f>
 					<parameter>Сделка_Номер</parameter>
+					<detailParameter>Сделка_Ссылка</detailParameter>
 				</c>
 			</c>
 			<c>
@@ -408,6 +409,7 @@
 				<c>
 					<f>12</f>
 					<parameter>Перевозка_НомерТТН</parameter>
+					<detailParameter>Перевозка_Ссылка</detailParameter>
 				</c>
 			</c>
 			<c>
@@ -475,6 +477,7 @@
 				<c>
 					<f>12</f>
 					<parameter>Перевозка_НомерТТН</parameter>
+					<detailParameter>Перевозка_Ссылка</detailParameter>
 				</c>
 			</c>
 			<c>
@@ -542,6 +545,7 @@
 				<c>
 					<f>12</f>
 					<parameter>Перевозка_НомерТТН</parameter>
+					<detailParameter>Перевозка_Ссылка</detailParameter>
 				</c>
 			</c>
 			<c>
@@ -730,6 +734,7 @@
 				<c>
 					<f>12</f>
 					<parameter>ДопУслуги_Поставщик</parameter>
+					<detailParameter>ДопУслуги_Ссылка</detailParameter>
 				</c>
 			</c>
 			<c>

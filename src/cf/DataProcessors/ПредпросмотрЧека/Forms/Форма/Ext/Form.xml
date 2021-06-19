@@ -1116,7 +1116,7 @@
 													<Title formatted="true">
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>&lt;b&gt;Внимание!&lt;/&gt; &lt;colorstyle -3&gt;Для печати чека в момент &lt;/&gt;&lt;font Arial&gt;&lt;fontsize 10&gt;&lt;color #413003&gt;&lt;bgcolor #FFFFFF&gt;передачи предметов расчета покупателю без оплаты &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;colorstyle -3&gt;требуется использовать ККТ с версией &lt;/&gt;&lt;b&gt;&lt;colorstyle -3&gt;ФФД 1.0.5&lt;/&gt;&lt;/&gt;&lt;colorstyle -3&gt; или &lt;/&gt;&lt;b&gt;&lt;colorstyle -3&gt;ФФД 1.1&lt;/&gt;&lt;/&gt;</v8:content>
+															<v8:content>&lt;b&gt;Внимание!&lt;/&gt; &lt;colorstyle -3&gt;Для печати чека в момент &lt;/&gt;&lt;font Arial&gt;&lt;fontsize 10&gt;&lt;bgcolor #ffffff&gt;&lt;color #413003&gt;передачи предметов расчета покупателю без оплаты &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;colorstyle -3&gt;требуется использовать ККТ с версией &lt;/&gt;&lt;b&gt;&lt;colorstyle -3&gt;ФФД 1.0.5&lt;/&gt;&lt;/&gt;&lt;colorstyle -3&gt; или &lt;/&gt;&lt;b&gt;&lt;colorstyle -3&gt;ФФД 1.1&lt;/&gt;&lt;/&gt;</v8:content>
 														</v8:item>
 													</Title>
 													<VerticalAlign>Top</VerticalAlign>
